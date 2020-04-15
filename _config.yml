@@ -80,7 +80,7 @@ theme:  spfk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Robynnnn/robynnnn.github.io.git
+  repo: https://gitee.com/robynnnn/robynnnn.git
   branch: master
 
   #底部显示的时间戳
