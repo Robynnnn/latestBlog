@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>01.CSS基础01 | Robyn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、CSS介绍1.1 什么是CSS？ CSS （Cascading Style Sheets）层叠样式表。层叠：       css的一种特性，后面讲。样式表：       如何描述一个人的外观？             苍老师                    身高:165cm;                    脸型:娃娃脸;                    发色:黑色;">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="01.CSS基础01">
+<meta property="og:url" content="http://yoursite.com/2017/11/04/CSS/css基础01/index.html">
+<meta property="og:site_name" content="Robyn">
+<meta property="og:description" content="1、CSS介绍1.1 什么是CSS？ CSS （Cascading Style Sheets）层叠样式表。层叠：       css的一种特性，后面讲。样式表：       如何描述一个人的外观？             苍老师                    身高:165cm;                    脸型:娃娃脸;                    发色:黑色;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-f157471d4f5bb943.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-2ab16188d74f8f02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-61b16bf20286f2e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2020-04-15T09:34:36.535Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="01.CSS基础01">
+<meta name="twitter:description" content="1、CSS介绍1.1 什么是CSS？ CSS （Cascading Style Sheets）层叠样式表。层叠：       css的一种特性，后面讲。样式表：       如何描述一个人的外观？             苍老师                    身高:165cm;                    脸型:娃娃脸;                    发色:黑色;">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5006978-f157471d4f5bb943.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternative" href="/atom.xml" title="Robyn" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Robyn</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Stay hungry,stay foolish</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                            <li><a href="/tags">标签</a></li>
+                        
+                            <li><a href="/archives/">归档</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 16.67px;">CSS</a> <a href="/tags/HTML基础/" style="font-size: 10px;">HTML基础</a> <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/angularJS/" style="font-size: 10px;">angularJS</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/移动端/" style="font-size: 13.33px;">移动端</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/u/86c7c137f770">Robyn的简书</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">you are the owner of your career</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Robyn</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Robyn</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Stay hungry,stay foolish</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                    <li><a href="/tags">标签</a></li>
+                
+                    <li><a href="/archives/">归档</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-CSS/css基础01" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/04/CSS/css基础01/" class="article-date">
+      <time datetime="2017-11-03T16:00:00.000Z" itemprop="datePublished">2017-11-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      01.CSS基础01
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="1、CSS介绍"><a href="#1、CSS介绍" class="headerlink" title="1、CSS介绍"></a>1、CSS介绍</h1><h2 id="1-1-什么是CSS？"><a href="#1-1-什么是CSS？" class="headerlink" title="1.1 什么是CSS？"></a>1.1 什么是CSS？</h2><blockquote>
+<p>CSS （Cascading Style Sheets）层叠样式表。<br>层叠：<br>       css的一种特性，后面讲。<br>样式表：<br>       如何描述一个人的外观？<br>             苍老师<br>                    身高:165cm;<br>                    脸型:娃娃脸;<br>                    发色:黑色;<br>                    肤色:白色;<br>                    发型:马尾辫;<br>                     胸围：D<br>        通过一系列属性:值来描述外观或样式，这一系列属性:值被称为样式表。</p>
+</blockquote>
+<p>##1.2 CSS的使用方式</p>
+<blockquote>
+<p>方式一：行内样式，标签的style属性（不推荐使用）<br>       &lt;标签名 style=”样式表属性1:值;样式表属性2:值…”&gt;&lt;/标签名&gt;</p>
+</blockquote>
+<p> 注意：<br>​<br>       → 要能够区分 标签属性       和   样式属性<br>       → 样式表属性和值之间用英文的冒号（:）分割，多个样式属性之间用英文的分号（;）分割。</p>
+<blockquote>
+<p>方式二：内部（内联、内嵌）样式，style标签（学习过程会用）<br>       <style><br>              选择到的元素目标 {<br>                     样式表属性1:值;<br>                    样式表属性2:值<br>                    …<br>             }<br>      </style></p>
+</blockquote>
+<p>注意：</p>
+<pre><code> → style标签要写在head标签里
+→ 样式表属性和值之间用英文的冒号（:）分割，多个样式属性之间用英文的分号（;）分割。
+</code></pre><blockquote>
+<p>方式三：外联样式，link标签：（实际开发用）<br>              <link rel="”stylesheet”" href="”样式文件的路径”"><br>link标签属性：<br>       → rel告诉浏览器该标签所引用的内容是样式表<br>       → href通过路径引入样式表文件</p>
+</blockquote>
+<p>注意：</p>
+<pre><code> → 要单独建立一个后缀名为.css的样式表文件，文件里的内容格式和方式二中style标签里的内容是一样的。
+→ link标签要写在head标签里。
+</code></pre><h1 id="2、-web三层分离"><a href="#2、-web三层分离" class="headerlink" title="2、 web三层分离"></a>2、 web三层分离</h1><blockquote>
+<p>web三层原则：<br>       HTML<br>       CSS<br>       JS</p>
+<ul>
+<li>这三种技术都作用于网页，为了方便网页后期的管理和维护，需要对这三种技术分而治之。</li>
+<li>所谓的分而治之就是把这三种技术分为三种独立的文件来管理（HTML文件、CSS文件、JS文件）</li>
+</ul>
+</blockquote>
+<h1 id="3、CSS样式属性"><a href="#3、CSS样式属性" class="headerlink" title="3、CSS样式属性"></a>3、CSS样式属性</h1><ul>
+<li>3.1 宽度、高度、背景色</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-f157471d4f5bb943.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<ul>
+<li>3.2 字体属性</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-2ab16188d74f8f02.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-61b16bf20286f2e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>font属性联写：<br>      font:font-style   font-weight   font-size/line-height  font-family<br>      注意：在font联写时 font-style 、font-weight、line-height这三个属性可以省略。</p>
+</blockquote>
+<h1 id="4、-CSS基本选择器"><a href="#4、-CSS基本选择器" class="headerlink" title="4、 CSS基本选择器"></a>4、 CSS基本选择器</h1><ul>
+<li>4.1 什么是选择器？<blockquote>
+<p>选择器：</p>
+<pre><code>选择器就是，要对页面上的元素进行样式修饰时，得先找到要修饰的元素。 怎么找？就是通过选择器（选择的方式）来找网页中要修饰的元素。
+</code></pre><p>语法格式：</p>
+<pre><code>选择器 {
+       样式属性1:值;
+      样式属性2:值;
+      ...
+}
+</code></pre></blockquote>
+</li>
+</ul>
+<p>注意：</p>
+<pre><code> → 选择器和第一个大括号之间要有空格。
+→ 第二大括号要和选择器的开始垂直方向对齐。
+ → 样式属性和值要写在大括号里，且在大括号里要有缩进（2个或4个空格）。
+→每一组样式属性和值要独占一行，且要加分号。
+</code></pre><ul>
+<li>4.2 基本选择器（单个选择器）<blockquote>
+<p>通配符选择器：</p>
+<pre><code>语法：
+* {
+             样式属性1:值;
+             样式属性2:值;
+              ...
+       }
+作用（特点）：
+      对页面上所有元素进行样式修饰。
+</code></pre></blockquote>
+</li>
+</ul>
+<blockquote>
+<p>标签名选择器：<br>       语法：<br>       标签名 {<br>                    样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }<br>作用（特点）：<br>             对页面上和选择器中的标签名一样的所有元素进行样式修饰。</p>
+</blockquote>
+<blockquote>
+<p>id选择器：<br>       语法：</p>
+</blockquote>
+<pre><code>#id值 {
+             样式属性1:值;
+             样式属性2:值;
+              ...
+       }
+作用（特点）：
+      对页面上和选择器中id值一样的单个元素进行修饰。
+</code></pre><p>注意：</p>
+<pre><code>→ 选择器中的id值前要加#号
+→ id就是标签的一个属性。
+→ id属性的id值，id值在页面上要唯一，不要重复。 
+→ id 命名规范，可以由数字、字母、下划线组合，不能由数字开头。
+</code></pre><blockquote>
+<p>class类选择器：<br>       语法：<br>       .类名 {<br>                    样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }<br>       作用（特点）：<br>             对页面上和选择器中class属性值一样的元素进行修饰。</p>
+</blockquote>
+<pre><code>注意：
+       → class 是标签中的属性。
+      → class 属性的值可以有多个，多个值之间要用空格隔开。
+       → class 属性值可以重复。
+       → 在选择器中类名之前要加点(.)。 
+       → class命名规范，可以由数字、字母、下划线、中划线组合，不能                    由数字开头。
+</code></pre><h1 id="5、CSS组合选择器"><a href="#5、CSS组合选择器" class="headerlink" title="5、CSS组合选择器"></a>5、CSS组合选择器</h1><ul>
+<li>5.1 什么是组合选择器？<blockquote>
+<p>组合选择器就是由多个基本选择器组合成的一个复合选择器。</p>
+</blockquote>
+</li>
+<li><p>5.2   组合选择器</p>
+<blockquote>
+<p>子代选择器：</p>
+<pre><code>语法：
+      选择器1 &gt;选择器2  {
+              样式属性1:值;
+             样式属性2:值;
+              ...
+       }
+</code></pre></blockquote>
+<pre><code>作用（特点）：
+       对选择器2所选定的元素进行样式修饰，但条件是所选定的元素的父元素必须符合选择器1。
+</code></pre></li>
+</ul>
+<blockquote>
+<p>后代选择器：<br>       语法：<br>             选择器1  选择器2  {<br>                     样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }</p>
+</blockquote>
+<pre><code>作用：
+       对选择器2所选定的元素进行样式修饰，但条件是所选定的元素的父元素或祖先元素必须符合选择器1。
+</code></pre><blockquote>
+<p>兄弟选择器：<br>       语法：<br>             选择器1+选择器2  {<br>                     样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }</p>
+</blockquote>
+<pre><code>作用：
+       对选择器2所选定的元素进行样式修饰，但条件是所选定的元素的上一个兄弟元素必须符合选择器1。
+</code></pre><blockquote>
+<p>交集选择器：<br>       语法：<br>             选择器1选择器2  {<br>                     样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }</p>
+</blockquote>
+<pre><code>作用：
+       对选择器2所选定的元素进行样式修饰，但条件是所选定的元素同时必须符合选择器1。
+
+ 注意：
+        → 选择器1通常是标签选择器或类选择器。
+        → 选择器2通常是类选择器。
+</code></pre><blockquote>
+<p>并集选择器：<br>       语法：<br>             选择器1,选择器2 {<br>                     样式属性1:值;<br>                    样式属性2:值;<br>                     …<br>              }<br>       作用：<br>             对于符合选择器1或符合选择器2的元素进行样式修饰。</p>
+</blockquote>
+<h1 id="6、CSS伪类选择器"><a href="#6、CSS伪类选择器" class="headerlink" title="6、CSS伪类选择器"></a>6、CSS伪类选择器</h1><ul>
+<li><p>6.1 锚伪类</p>
+<blockquote>
+<p>什么是锚伪类？</p>
+<pre><code>和a标签相关的伪类选择器。
+</code></pre><p>:link</p>
+<pre><code>作用：给超链接没有被访问前修饰的样式。
+</code></pre><p>语法：</p>
+<pre><code>a:link {
+        样式属性1:值;
+       样式属性2:值;
+        ...
+ }
+</code></pre><p>注意：</p>
+<pre><code>仅仅对a标签有作用。
+</code></pre><p>:visited</p>
+<pre><code>作用：给超链接被访问后修饰的样式。
+</code></pre><p>语法：</p>
+<pre><code>a:visited {
+        样式属性1:值;
+       样式属性2:值;
+</code></pre><p>…</p>
+<pre><code>}
+</code></pre><p>注意：</p>
+<pre><code>仅仅对a标签有作用。
+</code></pre><p>:hover</p>
+<pre><code>作用：鼠标悬停在元素上时修饰的样式
+</code></pre><p>语法：</p>
+<pre><code>a:hover {
+        样式属性1:值;
+       样式属性2:值;
+        ...
+ }
+</code></pre><p>注意：</p>
+<pre><code>→ 对所有标签有效果。
+→ 针对超链接，:hover必须放在:link和:visited之后。
+</code></pre><p>:active</p>
+<pre><code>作用：对元素鼠标键按下不弹起时所修饰的样式。
+</code></pre><p>语法：</p>
+<pre><code>a:active {
+        样式属性1:值;
+       样式属性2:值;
+        ...
+ }
+</code></pre><p>注意：</p>
+<pre><code>→ 对所有标签有效果。
+→ 针对超链接，:active必须放在:hover之后。
+</code></pre></blockquote>
+</li>
+<li><p>6.2 input输入框伪类</p>
+<blockquote>
+<p>:focus<br>  作用：input输入框获取焦点时要修饰的样式。<br>语法：</p>
+<pre><code>input:focus {
+       样式属性1:值;
+      样式属性2:值;
+      ...
+}
+</code></pre></blockquote>
+<h1 id="7、CSS样式表中的注释"><a href="#7、CSS样式表中的注释" class="headerlink" title="7、CSS样式表中的注释"></a>7、CSS样式表中的注释</h1><blockquote>
+<p>/<em> 注释的内容 </em>/<br>注意： 注释不能嵌套</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="8、元素的显示模式"><a href="#8、元素的显示模式" class="headerlink" title="8、元素的显示模式"></a>8、元素的显示模式</h1><blockquote>
+<p>模式一：块级元素<br>特点：<br>      → 独占一行<br>      → 可设置宽高<br>默认是块级元素的标签有：<br>      h1-h6、p、div、ul、ol、li、dl、dt、dd<br>通过样式属性将一个元素设为块级元素：<br>      display:block;<br>模式二：行内元素<br>特点：<br>      → 不独占一行<br>      → 不能设置宽高，宽高由内容决定。<br>默认的是行内元素的标签有：<br>        a、span<br>通过样式属性将一个元素设为行内元素：<br>       display:inline;<br>模式三：行内块级元素<br>特点：<br>       → 不独占一行 （行内元素的特点）<br>      → 可设置宽高 （块级元素的特点）<br>默认的是行内块级元素的标签有：<br>      img,input,select,textarea<br>通过样式属性将一个元素设为行内块级元素：<br>      display:inline-block</p>
+</blockquote>
+<h1 id="9、颜色"><a href="#9、颜色" class="headerlink" title="9、颜色"></a>9、颜色</h1><blockquote>
+<p>颜色表示方式：<br>       方式一：颜色名称<br>              如：red、blue、green<br>       方式二：十六进制   （应用比较多）<br>               0 1 2 3 4 5 6 7 8 9 A B C D E F<br>              如：#FFB6C1  六个 或 三个</p>
+</blockquote>
+<pre><code>       #ffbbcc → #fbc  （字母大小写一样）
+方式三：rgb   
+       red、green、blue 三种颜色调和，每个颜色等级范围是0-255
+       如：rgb(255,0,0)
+方式四：rgba
+       red、green、blue 三种颜色调和，每个颜色等级范围是0-255
+        a是透明度alpha 透明度的等级是0-1，可包含小数。
+       如：rgba(0,0,0,0.5);    或  rgba(0,0,0,.5);
+       注意：最后一个数值是小数时,可以省略.前面的0
+</code></pre>
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/11/04/CSS/css基础01/">01.CSS基础01</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Robyn 的个人博客">Robyn</a></p>
+        <p><span>发布时间:</span>2017年11月04日 - 00时00分</p>
+        <p><span>最后更新:</span>2020年04月15日 - 17时34分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/04/CSS/css基础01/" title="01.CSS基础01">http://yoursite.com/2017/11/04/CSS/css基础01/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/11/04/CSS/css基础01/　　作者: Robyn" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/11/05/移动端/04_09.移动端事件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          04_09.移动端事件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/04/CSS/css基础02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">02.CSS基础02</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、CSS介绍"><span class="toc-number">1.</span> <span class="toc-text">1、CSS介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-什么是CSS？"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 什么是CSS？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、-web三层分离"><span class="toc-number">2.</span> <span class="toc-text">2、 web三层分离</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3、CSS样式属性"><span class="toc-number">3.</span> <span class="toc-text">3、CSS样式属性</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4、-CSS基本选择器"><span class="toc-number">4.</span> <span class="toc-text">4、 CSS基本选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5、CSS组合选择器"><span class="toc-number">5.</span> <span class="toc-text">5、CSS组合选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6、CSS伪类选择器"><span class="toc-number">6.</span> <span class="toc-text">6、CSS伪类选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7、CSS样式表中的注释"><span class="toc-number">7.</span> <span class="toc-text">7、CSS样式表中的注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8、元素的显示模式"><span class="toc-number">8.</span> <span class="toc-text">8、元素的显示模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9、颜色"><span class="toc-number">9.</span> <span class="toc-text">9、颜色</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'robyn',
+      repo: 'robynnnn.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/11/05/移动端/04_09.移动端事件/" title="上一篇: 04_09.移动端事件">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/11/04/CSS/css基础02/" title="下一篇: 02.CSS基础02">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/01_13.day01--基础知识&京东移动端/">01_13.day01--基础知识&京东移动端</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/04_09.移动端事件/">04_09.移动端事件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础01/">01.CSS基础01</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础02/">02.CSS基础02</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础03/">03.CSS基础03</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础04/">04.CSS基础04</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础05/">05.CSS基础05</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/03/HTML/html基础/">html基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/angularJS/浅谈angularJS/">浅谈angularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/中医箱/装系统/">装系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/02.模块化规则/">02.模块化规则</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/01.NodeJS-introduce/">01.NodeJS-introduce</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/03.api/">03.api</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/04.核心模块之文件模块/">04.核心模块之文件模块</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/06.根据不同请求响应不同的内容/">06.根据不同请求响应不同的内容</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/05.helloworld-node版本/">05.helloworld-node版本</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/07.根据不同的请求响应不同的文件/">07.根据不同的请求响应不同的文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/08.完成一个小型静态资源服务器/">08.完成一个小型静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/09.后台语言模板的渲染/">09.后台语言模板的渲染</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/10.stat/">10.stat</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/11.解决数组为空的问题/">11.解决数组为空的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/12.moment/">12.moment</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/13.模拟静态资源服务器/">13.模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/14.安全的模拟静态资源服务器/">14.安全的模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/15.异步读写文件/">15.异步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/16.同步读写文件/">16.同步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/17.url.parse/">17.url.parse</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/18.commonjs规范/">18.commonjs规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/19.moment的使用/">19.moment的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/20.let关键字/">20.let关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/21.严格模式下的作用域生效demo/">21.严格模式下的作用域生效demo</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/22.const常量/">22.const常量</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/23.模板字符串/">23.模板字符串</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/24.字符串的扩展方法/">24.字符串的扩展方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/25.箭头函数/">25.箭头函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/26.箭头函数的注意点/">26.箭头函数的注意点</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/27.hello world-express/">27.hello world-express</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/28.express的基本路由/">28.express的基本路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/29.网站人口/">29.网站人口</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/30.匿名函数传参/">30.匿名函数传参</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/30/01.welcome/">Welcome to robyn's blog</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <!-- <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2020 Robyn
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer> -->
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

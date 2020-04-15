@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>04_09.移动端事件 | Robyn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="移动端事件(touchEvent)  现在随着移动设备的出现,鼠标事件不能够满足多指触控的事件需求,再加上click点击事件在移动端存在延迟,因此在移动端出现了移动端事件也叫TouchEvent.TouchEvent 是一类描述手指在触摸平面（触摸屏、触摸板等）的状态变化的事件。这类事件用于描述一个或多个触点，使开发者可以检测触点的移动，触点的增加和减少，等等。 touchEvent类型  tou">
+<meta name="keywords" content="移动端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="04_09.移动端事件">
+<meta property="og:url" content="http://yoursite.com/2017/11/05/移动端/04_09.移动端事件/index.html">
+<meta property="og:site_name" content="Robyn">
+<meta property="og:description" content="移动端事件(touchEvent)  现在随着移动设备的出现,鼠标事件不能够满足多指触控的事件需求,再加上click点击事件在移动端存在延迟,因此在移动端出现了移动端事件也叫TouchEvent.TouchEvent 是一类描述手指在触摸平面（触摸屏、触摸板等）的状态变化的事件。这类事件用于描述一个或多个触点，使开发者可以检测触点的移动，触点的增加和减少，等等。 touchEvent类型  tou">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/11/05/移动端/04_09.移动端事件/images/mobileGesture.jpg">
+<meta property="og:updated_time" content="2020-04-15T09:34:36.641Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="04_09.移动端事件">
+<meta name="twitter:description" content="移动端事件(touchEvent)  现在随着移动设备的出现,鼠标事件不能够满足多指触控的事件需求,再加上click点击事件在移动端存在延迟,因此在移动端出现了移动端事件也叫TouchEvent.TouchEvent 是一类描述手指在触摸平面（触摸屏、触摸板等）的状态变化的事件。这类事件用于描述一个或多个触点，使开发者可以检测触点的移动，触点的增加和减少，等等。 touchEvent类型  tou">
+<meta name="twitter:image" content="http://yoursite.com/2017/11/05/移动端/04_09.移动端事件/images/mobileGesture.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="Robyn" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Robyn</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Stay hungry,stay foolish</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                            <li><a href="/tags">标签</a></li>
+                        
+                            <li><a href="/archives/">归档</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 16.67px;">CSS</a> <a href="/tags/HTML基础/" style="font-size: 10px;">HTML基础</a> <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/angularJS/" style="font-size: 10px;">angularJS</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/移动端/" style="font-size: 13.33px;">移动端</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/u/86c7c137f770">Robyn的简书</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">you are the owner of your career</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Robyn</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Robyn</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Stay hungry,stay foolish</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                    <li><a href="/tags">标签</a></li>
+                
+                    <li><a href="/archives/">归档</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-移动端/04_09.移动端事件" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/05/移动端/04_09.移动端事件/" class="article-date">
+      <time datetime="2017-11-04T16:00:00.000Z" itemprop="datePublished">2017-11-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      04_09.移动端事件
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/移动端/">移动端</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="移动端事件-touchEvent"><a href="#移动端事件-touchEvent" class="headerlink" title="移动端事件(touchEvent)"></a>移动端事件(touchEvent)</h2><p>  现在随着移动设备的出现,鼠标事件不能够满足多指触控的事件需求,再加上click点击事件在移动端存在延迟,因此在移动端出现了移动端事件也叫TouchEvent.TouchEvent 是一类描述手指在触摸平面（触摸屏、触摸板等）的状态变化的事件。这类事件用于描述一个或多个触点，使开发者可以检测触点的移动，触点的增加和减少，等等。</p>
+<h4 id="touchEvent类型"><a href="#touchEvent类型" class="headerlink" title="touchEvent类型"></a>touchEvent类型</h4><blockquote>
+<p> touchstart 当用户在触摸平面上放置了一个触点时触发。</p>
+</blockquote>
+<blockquote>
+<p> touchend 当一个触点被用户从触摸平面上移除（当用户将一个手指离开触摸平面）时触发。</p>
+</blockquote>
+<blockquote>
+<p> touchmove 当用户在触摸平面上移动触点时触发。</p>
+</blockquote>
+<h4 id="touchEvent对象"><a href="#touchEvent对象" class="headerlink" title="touchEvent对象"></a>touchEvent对象</h4><blockquote>
+<p> touches  </p>
+</blockquote>
+<pre><code>代表的是屏幕上总共有几个触点
+</code></pre><blockquote>
+<p> targetTouches </p>
+</blockquote>
+<pre><code>代表的是绑定事件的元素上有几个触点
+</code></pre><blockquote>
+<p> changedTouches </p>
+</blockquote>
+<pre><code>相对于上一次状态（进入目标元素、离开目标元素、在目标元素上发生了移动）发生了改变的触摸点的集合
+(在touchend事件里面 只能通过changedTouches获取离开目标元素的手指)
+最后有可能有一个离开了屏幕  只会在changedTouches中存在一个触点的数据
+最后有可能有两个同时离开了屏幕 就会在changedTouches中存在两个触点的数据
+</code></pre><h4 id="touch对象"><a href="#touch对象" class="headerlink" title="touch对象"></a>touch对象</h4><blockquote>
+<p> clientX/Y (推荐用的)</p>
+</blockquote>
+<pre><code>相对于浏览器可视区域(屏幕)的坐标。想要获取正确的结果必须写全viewport的设置
+</code></pre><blockquote>
+<p> pageX/Y </p>
+</blockquote>
+<pre><code>相对于页面的坐标(页面有多大 坐标的最大值就有多大 但是想要看到这个结果 必须写全viewport的设置)
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no&quot;&gt;
+</code></pre><blockquote>
+<p> screenX/Y(不用 因为有兼容性)<br>    相对于屏幕的坐标（谷歌下是相对于屏幕-火狐下是和clientX/Y是一样的）</p>
+</blockquote>
+<h4 id="移动端手势介绍"><a href="#移动端手势介绍" class="headerlink" title="移动端手势介绍"></a>移动端手势介绍</h4><p>  <img src="./images/mobileGesture.jpg" alt></p>
+<h4 id="手势封装"><a href="#手势封装" class="headerlink" title="手势封装"></a>手势封装</h4><blockquote>
+<p> tap手势:单击  判断起始点的坐标和终止点的坐标是否一致</p>
+</blockquote>
+<blockquote>
+<p> drag手势:拖拽  就是把一个物体从一个地方拖拽到另一个地方  公式:原始位置(left top)+手指移动的距离(x y的差值)</p>
+</blockquote>
+<blockquote>
+<p> swipe手势:swipe的功能是为了判断手势的方向</p>
+</blockquote>
+<blockquote>
+<p> 触屏轮播图案例</p>
+</blockquote>
+<blockquote>
+<p>Click延迟300ms</p>
+</blockquote>
+<pre><code>Click事件在移动手机开发中有300ms的延迟，因为在手机早期，浏览器系统有放大和缩放功能，用户在屏幕上点击两次之后，系统会触发放大或者缩放功能，因此系统做了一个处理，当触摸一次后，在300ms这段时间内有没有触摸第二次，如果触摸了第二次的话，说明是触发放大或缩放功能，否则的话是click事件。因此当click时候，所有用户必须等待于300ms后才会触发click事件。所以当在移动端使用click事件的时候，会感觉到有300ms的迟钝。
+其实Click延时不是精确的300ms 他是一个习惯性的名称 而是因为用户通过正常的点击 click事件大概在300ms的时候触发(一般情况下 300ms延迟说的是 大概在200-300ms左右)
+</code></pre><blockquote>
+<p>解决</p>
+</blockquote>
+<pre><code>1.veiwport设置
+2.fastClick插件
+</code></pre><h4 id="iScroll"><a href="#iScroll" class="headerlink" title="iScroll"></a>iScroll</h4><blockquote>
+<p>下载地址:<a href="https://github.com/cubiq/iscroll" target="_blank" rel="noopener">https://github.com/cubiq/iscroll</a></p>
+</blockquote>
+<blockquote>
+<p>中文文档:<a href="https://iiunknown.gitbooks.io/iscroll-5-api-cn/" target="_blank" rel="noopener">https://iiunknown.gitbooks.io/iscroll-5-api-cn/</a></p>
+</blockquote>
+<blockquote>
+<p>iScroll是什么?</p>
+</blockquote>
+<pre><code>iScroll是一个高性能，资源占用少，无依赖，多平台的javascript滚动插件。
+</code></pre><blockquote>
+<p>iScroll使用方法</p>
+</blockquote>
+<h4 id="zepto-重点"><a href="#zepto-重点" class="headerlink" title="zepto(重点)"></a>zepto(重点)</h4><blockquote>
+<p>zepto.js</p>
+</blockquote>
+<blockquote>
+<p>下载地址:<a href="https://github.com/madrobby/zepto" target="_blank" rel="noopener">https://github.com/madrobby/zepto</a></p>
+</blockquote>
+<blockquote>
+<p>中文文档:<a href="http://www.css88.com/doc/zeptojs_api/" target="_blank" rel="noopener">http://www.css88.com/doc/zeptojs_api/</a></p>
+</blockquote>
+<blockquote>
+<p>zepto是什么?</p>
+</blockquote>
+<pre><code>Zepto是一个轻量级的针对现代高级浏览器的JavaScript库， 它与jquery有着类似的api。 如果你会用jquery，那么你也会用zepto。
+1.zepto比jquery要小
+2.jquery已经有了大量的用户  选择了和jquery的方法和调用一样的一个库 就是zepto
+3.zepto完整的压缩完 40k 适应于移动端轻量级的特点
+4.zepto是分模块的默认的只有5个核心模块 其他的都是按需使用
+</code></pre><blockquote>
+<p>zepto的模块介绍</p>
+</blockquote>
+<pre><code>核心模块 5个 
+总共有17个模块
+</code></pre><blockquote>
+<p>zetpo使用举例</p>
+</blockquote>
+<blockquote>
+<p>zepto定制<br>    默认的zepto只有默认的5个模块<br>    如果想用其他的需要的模块 那么需要定制<br>    步骤:<br>        1.安装node<br>        2.去github下载zepto-master.zip<br>        3.把zepto-master.zip解压 进入有很多文件的文件夹中<br>        4.安装键盘shift 打开命令行窗口<br>        5.输入命令:npm install<br>        6.定制<br>            6.1 找到package.json同级文件中的make文件的41行<br>            6.2 如果你需要什么模块 就把名称添加进入<br>            6.3 执行npm run-scripts dist<br>            6.4 如果有问题 查看zepto中的readme.md</p>
+</blockquote>
+<h4 id="swipe"><a href="#swipe" class="headerlink" title="swipe"></a>swipe</h4><blockquote>
+<p>swipe.js</p>
+</blockquote>
+<p>   下载地址:<a href="https://github.com/thebird/Swipe" target="_blank" rel="noopener">https://github.com/thebird/Swipe</a></p>
+<p>   中文文档:无中文文档 英文文档为github地址</p>
+<blockquote>
+<p>swipe是什么?</p>
+</blockquote>
+<pre><code>swipe是最精准的触摸轮播图插件
+</code></pre><blockquote>
+<p>swipe使用方法?</p>
+</blockquote>
+<h4 id="fastclick"><a href="#fastclick" class="headerlink" title="fastclick"></a>fastclick</h4><blockquote>
+<p>下载地址:<a href="https://github.com/ftlabs/fastclick" target="_blank" rel="noopener">https://github.com/ftlabs/fastclick</a></p>
+</blockquote>
+<blockquote>
+<p>中文文档:无中文文档 英文文档为github地址</p>
+</blockquote>
+<blockquote>
+<p>fastclick是什么?</p>
+</blockquote>
+<pre><code>移动端事件会比鼠标事件快大约300ms 还有一个bug 只不过这个bug不去修改
+</code></pre><p>​    </p>
+<blockquote>
+<p>fastclick使用方法?</p>
+</blockquote>
+<h4 id="Hammer-js"><a href="#Hammer-js" class="headerlink" title="Hammer.js"></a>Hammer.js</h4>
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/11/05/移动端/04_09.移动端事件/">04_09.移动端事件</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Robyn 的个人博客">Robyn</a></p>
+        <p><span>发布时间:</span>2017年11月05日 - 00时00分</p>
+        <p><span>最后更新:</span>2020年04月15日 - 17时34分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/05/移动端/04_09.移动端事件/" title="04_09.移动端事件">http://yoursite.com/2017/11/05/移动端/04_09.移动端事件/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/11/05/移动端/04_09.移动端事件/　　作者: Robyn" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/11/05/移动端/01_13.day01--基础知识&京东移动端/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          01_13.day01--基础知识&amp;京东移动端
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/04/CSS/css基础01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">01.CSS基础01</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#移动端事件-touchEvent"><span class="toc-number">1.</span> <span class="toc-text">移动端事件(touchEvent)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#touchEvent类型"><span class="toc-number">1.0.1.</span> <span class="toc-text">touchEvent类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#touchEvent对象"><span class="toc-number">1.0.2.</span> <span class="toc-text">touchEvent对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#touch对象"><span class="toc-number">1.0.3.</span> <span class="toc-text">touch对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#移动端手势介绍"><span class="toc-number">1.0.4.</span> <span class="toc-text">移动端手势介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#手势封装"><span class="toc-number">1.0.5.</span> <span class="toc-text">手势封装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iScroll"><span class="toc-number">1.0.6.</span> <span class="toc-text">iScroll</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#zepto-重点"><span class="toc-number">1.0.7.</span> <span class="toc-text">zepto(重点)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#swipe"><span class="toc-number">1.0.8.</span> <span class="toc-text">swipe</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fastclick"><span class="toc-number">1.0.9.</span> <span class="toc-text">fastclick</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hammer-js"><span class="toc-number">1.0.10.</span> <span class="toc-text">Hammer.js</span></a></li></ol></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'robyn',
+      repo: 'robynnnn.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/11/05/移动端/01_13.day01--基础知识&京东移动端/" title="上一篇: 01_13.day01--基础知识&amp;京东移动端">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/11/04/CSS/css基础01/" title="下一篇: 01.CSS基础01">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/01_13.day01--基础知识&京东移动端/">01_13.day01--基础知识&京东移动端</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/04_09.移动端事件/">04_09.移动端事件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础01/">01.CSS基础01</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础02/">02.CSS基础02</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础03/">03.CSS基础03</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础04/">04.CSS基础04</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础05/">05.CSS基础05</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/03/HTML/html基础/">html基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/angularJS/浅谈angularJS/">浅谈angularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/中医箱/装系统/">装系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/02.模块化规则/">02.模块化规则</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/01.NodeJS-introduce/">01.NodeJS-introduce</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/03.api/">03.api</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/04.核心模块之文件模块/">04.核心模块之文件模块</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/06.根据不同请求响应不同的内容/">06.根据不同请求响应不同的内容</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/05.helloworld-node版本/">05.helloworld-node版本</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/07.根据不同的请求响应不同的文件/">07.根据不同的请求响应不同的文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/08.完成一个小型静态资源服务器/">08.完成一个小型静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/09.后台语言模板的渲染/">09.后台语言模板的渲染</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/10.stat/">10.stat</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/11.解决数组为空的问题/">11.解决数组为空的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/12.moment/">12.moment</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/13.模拟静态资源服务器/">13.模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/14.安全的模拟静态资源服务器/">14.安全的模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/15.异步读写文件/">15.异步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/16.同步读写文件/">16.同步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/17.url.parse/">17.url.parse</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/18.commonjs规范/">18.commonjs规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/19.moment的使用/">19.moment的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/20.let关键字/">20.let关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/21.严格模式下的作用域生效demo/">21.严格模式下的作用域生效demo</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/22.const常量/">22.const常量</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/23.模板字符串/">23.模板字符串</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/24.字符串的扩展方法/">24.字符串的扩展方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/25.箭头函数/">25.箭头函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/26.箭头函数的注意点/">26.箭头函数的注意点</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/27.hello world-express/">27.hello world-express</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/28.express的基本路由/">28.express的基本路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/29.网站人口/">29.网站人口</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/30.匿名函数传参/">30.匿名函数传参</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/30/01.welcome/">Welcome to robyn's blog</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <!-- <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2020 Robyn
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer> -->
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>03.CSS基础03 | Robyn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、盒子模型 1.1 生活中的盒子     生活中的盒子模型：      → 盒子的边框的厚度，外壳。      → 盒子中的填充物，泡沫。       → 盒子中的内容，手机。       → 盒子与盒子之间的距离。   1.2 CSS中的盒子模型     在web中，我们在body里所放到任何元素都可以看成一个盒子，所以在网页中“万物皆是盒子”。CSS中的盒子模型：      → 元素（盒子）">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="03.CSS基础03">
+<meta property="og:url" content="http://yoursite.com/2017/11/04/CSS/css基础03/index.html">
+<meta property="og:site_name" content="Robyn">
+<meta property="og:description" content="1、盒子模型 1.1 生活中的盒子     生活中的盒子模型：      → 盒子的边框的厚度，外壳。      → 盒子中的填充物，泡沫。       → 盒子中的内容，手机。       → 盒子与盒子之间的距离。   1.2 CSS中的盒子模型     在web中，我们在body里所放到任何元素都可以看成一个盒子，所以在网页中“万物皆是盒子”。CSS中的盒子模型：      → 元素（盒子）">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-35f99e17dde60c4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-fe5d2837947799b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-56b67d60db32157a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-5e9482b0f996af90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5006978-2e40e5d6cc821299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2020-04-15T09:34:36.539Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="03.CSS基础03">
+<meta name="twitter:description" content="1、盒子模型 1.1 生活中的盒子     生活中的盒子模型：      → 盒子的边框的厚度，外壳。      → 盒子中的填充物，泡沫。       → 盒子中的内容，手机。       → 盒子与盒子之间的距离。   1.2 CSS中的盒子模型     在web中，我们在body里所放到任何元素都可以看成一个盒子，所以在网页中“万物皆是盒子”。CSS中的盒子模型：      → 元素（盒子）">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5006978-35f99e17dde60c4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternative" href="/atom.xml" title="Robyn" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Robyn</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Stay hungry,stay foolish</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                            <li><a href="/tags">标签</a></li>
+                        
+                            <li><a href="/archives/">归档</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/CSS/" style="font-size: 16.67px;">CSS</a> <a href="/tags/HTML基础/" style="font-size: 10px;">HTML基础</a> <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/angularJS/" style="font-size: 10px;">angularJS</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/移动端/" style="font-size: 13.33px;">移动端</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.jianshu.com/u/86c7c137f770">Robyn的简书</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">you are the owner of your career</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Robyn</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Robyn</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Stay hungry,stay foolish</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                    <li><a href="/tags">标签</a></li>
+                
+                    <li><a href="/archives/">归档</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/robynnnn" title="github">github</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-CSS/css基础03" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/04/CSS/css基础03/" class="article-date">
+      <time datetime="2017-11-03T16:00:00.000Z" itemprop="datePublished">2017-11-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      03.CSS基础03
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="1、盒子模型"><a href="#1、盒子模型" class="headerlink" title="1、盒子模型"></a>1、盒子模型</h1><ul>
+<li>1.1 生活中的盒子</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-35f99e17dde60c4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-fe5d2837947799b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>生活中的盒子模型：<br>      → 盒子的边框的厚度，外壳。<br>      → 盒子中的填充物，泡沫。<br>       → 盒子中的内容，手机。<br>       → 盒子与盒子之间的距离。</p>
+</blockquote>
+<ul>
+<li>1.2 CSS中的盒子模型</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-56b67d60db32157a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-5e9482b0f996af90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>在web中，我们在body里所放到任何元素都可以看成一个盒子，所以在网页中“万物皆是盒子”。<br>CSS中的盒子模型：<br>      → 元素（盒子）的边框，border。相当于生活中盒子的外壳的厚度。<br>       → 元素（盒子）的内边距，padding。 相当于生活盒子里的泡沫。<br>      → 元素（盒子）的内容区域width、height值。相当于生活中盒子里中的手机。<br>       → 元素（盒子）的外边距margin。相当生活中盒子与盒子之间的距离</p>
+</blockquote>
+<h1 id="2、CSS-盒子模型中的边框（border）"><a href="#2、CSS-盒子模型中的边框（border）" class="headerlink" title="2、CSS 盒子模型中的边框（border）"></a>2、CSS 盒子模型中的边框（border）</h1><blockquote>
+<p>border样式属性：<br>  作用：设置盒子的边框相关样式<br>         border-width：边框的厚度或大小<br>                            如：border-width:1px;<br>  border-style：边框的类型<br>                            如：border-style:值;<br>                                   none      无边框 默认<br>                                   solid  实线<br>                                  dotted 点状边框<br>                                  dashed 虚线<br>                                   double 双边框<br>                             …<br>         border-color：边框的颜色<br>                            如：border-color:red;<br>                            若不设置边框的颜色，默认为黑色。<br>         联写：<br>                      border:边框的大小 边框的类型 边框的颜色;<br>                如：border:1px solid blue;</p>
+</blockquote>
+<blockquote>
+<p>盒子的四个边框：<br>      边框的方向：top上、right右、bottom下、left左<br>       单个方向设置：<br>              border-方向:边框厚度  边框的类型  边框的颜色。<br>              如：border-top:10px  solid  red;</p>
+</blockquote>
+<p>注意：</p>
+<pre><code>→   一般情况下，边框会影响盒子的大小。
+→ 默认情况下，针对块级元素，若不设置width时，该块级元素的width等于它父元素的width。
+        对于子元素，增加边框时，该元素的width会自动改变适应父元素的区域。
+</code></pre><blockquote>
+<p>表格边框合并：<br>              border-collapse:collapse</p>
+</blockquote>
+<h1 id="3、CSS盒子模型中的内边距（padding）"><a href="#3、CSS盒子模型中的内边距（padding）" class="headerlink" title="3、CSS盒子模型中的内边距（padding）"></a>3、CSS盒子模型中的内边距（padding）</h1><blockquote>
+<p>内边距会影响盒子的大小！因为会把盒子撑大，<br>因为整体的宽=width+左右的内边距<br>整体的高：height+上下边距<br>如果不想计算，可以直接用一个属性：border-sizing:borer-box;<br>border-sizing: border-box;<br>/<em>但是弊端是有很多浏览器不支持</em>/<br>-moz-border-sizing: border-box;<br>-webkit-border-sizing: border-box;<br>/<em>为避免不必要的麻烦，直接以上代码全部敲</em>/</p>
+</blockquote>
+<blockquote>
+<p>用webstorm的话，输入bx+table就行<br>padding样式属性：<br>      作用：设置盒子中的内边距<br>       语法：<br>                     padding:数值;<br>                     如：padding:20px;<br>注意：<br>       → 一般情况下，边框会影响盒子的大小。<br>              → 默认情况下，针对块级元素，若不设置width时，该块级元素的width等于它父元素的width。<br>              对于子元素，增加内边距时，该元素的width会自动改变适应父元素的区域。<br>当一个盒子设置了背景图片logo后，盒子里面的文字默认是压在图片上面的，如果想显示出logo，可以考虑用padding解决问题。<br>盒子的四个内边距：<br>      内边距的方向：top上、right右、bottom下、left左<br>      语法：<br>         padding-方向:值;<br>               如：padding-left:20px;<br>       联写：<br>                padding:值1<br>                     值1:（上、右、下、左）<br>              如:  padding:10px;</p>
+</blockquote>
+<pre><code>padding:值1 值2;
+                   值1（上、下）
+            值2（左、右）
+     如:  padding:10px  20px;
+
+
+       padding:值1 值2 值3;
+                   值1（上）
+                   值2（左、右）
+                   值3（下）
+     如:  padding:10px  20px  10px;
+
+
+       padding:值1 值2 值3 值4；
+                   值1（上）
+                   值2（右）
+                   值3（下）
+                   值4（左）
+                   如： padding:10px  20px  10px  20px;
+</code></pre><blockquote>
+<p>注意：<br>              针对行级元素，在设定其padding值时，在IE浏览器低版本中（IE8以下），padding的上下没有效果。</p>
+</blockquote>
+<h1 id="4、盒子的总大小"><a href="#4、盒子的总大小" class="headerlink" title="4、盒子的总大小"></a>4、盒子的总大小</h1><blockquote>
+<p>盒子的大小：<br>       盒子的总宽度：内容区域width + 左右内边距padding + 左右边框border<br>       盒子的总高度：内容区域height + 上下内边距padding + 上下边框border</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-2e40e5d6cc821299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h1 id="5、盒子的外边距margin"><a href="#5、盒子的外边距margin" class="headerlink" title="5、盒子的外边距margin"></a>5、盒子的外边距margin</h1><blockquote>
+<p>margin样式属性：<br>      作用：设置盒子与其他盒子之间的距离。<br>       语法：<br>                     margin:数值;<br>                     如：margin:20px;<br>注意：<br>       → margin的改变不会影响盒子的大小。</p>
+</blockquote>
+<blockquote>
+<p>盒子的四个外边距：<br>      外边距的方向：top上、right右、bottom下、left左<br>      语法：<br>         margin-方向:值;<br>               如：margin-left:20px;<br>       联写：<br>                margin:值1<br>                     值1:（上、右、下、左）<br>              如:  margin:10px;</p>
+</blockquote>
+<pre><code>margin:值1 值2;
+                   值1（上、下）
+            值2（左、右）
+     如:  margin:10px  20px;
+
+
+       margin:值1 值2 值3;
+                   值1（上）
+                   值2（左、右）
+                   值3（下）
+     如:  margin:10px  20px  10px;
+
+
+       margin:值1 值2 值3 值4；
+                   值1（上）
+                   值2（右）
+                   值3（下）
+                   值4（左）
+                   如： margin:10px  20px  10px  20px;
+</code></pre><blockquote>
+<p>盒子水平居中：<br>              margin:0px  auto;<br>注意：盒子必须是块级元素，且宽度必须确定。<br>margin的特殊情况一：<br>              针对行内元素，margin的上下没有效果。</p>
+</blockquote>
+<blockquote>
+<p>margin的特殊情况二：<br>             对于一个父元素里所嵌套的子元素。若父元素没有上边框没有上内边距，设置子元素的margin-top值时，margin-top对子元素无效，并且父元素会受到影响。 解决办法就是给父元素加个上边框或上内边距。<br>              这种情况，我们在实际开发中，一般不会选择用子元素margin-top，而会用父元素的padding-top来实现。</p>
+</blockquote>
+<blockquote>
+<p>margin的特殊情况三（margin合并或塌陷问题）：<br>              对于两个同级的盒子，一个在上一个在下。若上面的盒子margin-bottom与下面的盒子margin-top一起作用时。这时，上下两个盒子的间距会选择margin-bottom 与 margin-top中最大的值。</p>
+</blockquote>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/11/04/CSS/css基础03/">03.CSS基础03</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Robyn 的个人博客">Robyn</a></p>
+        <p><span>发布时间:</span>2017年11月04日 - 00时00分</p>
+        <p><span>最后更新:</span>2020年04月15日 - 17时34分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/04/CSS/css基础03/" title="03.CSS基础03">http://yoursite.com/2017/11/04/CSS/css基础03/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/11/04/CSS/css基础03/　　作者: Robyn" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/11/04/CSS/css基础02/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          02.CSS基础02
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/04/CSS/css基础04/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">04.CSS基础04</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1、盒子模型"><span class="toc-number">1.</span> <span class="toc-text">1、盒子模型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2、CSS-盒子模型中的边框（border）"><span class="toc-number">2.</span> <span class="toc-text">2、CSS 盒子模型中的边框（border）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3、CSS盒子模型中的内边距（padding）"><span class="toc-number">3.</span> <span class="toc-text">3、CSS盒子模型中的内边距（padding）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4、盒子的总大小"><span class="toc-number">4.</span> <span class="toc-text">4、盒子的总大小</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5、盒子的外边距margin"><span class="toc-number">5.</span> <span class="toc-text">5、盒子的外边距margin</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'robyn',
+      repo: 'robynnnn.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/11/04/CSS/css基础02/" title="上一篇: 02.CSS基础02">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/11/04/CSS/css基础04/" title="下一篇: 04.CSS基础04">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/01_13.day01--基础知识&京东移动端/">01_13.day01--基础知识&京东移动端</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/05/移动端/04_09.移动端事件/">04_09.移动端事件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础01/">01.CSS基础01</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础02/">02.CSS基础02</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础03/">03.CSS基础03</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础04/">04.CSS基础04</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/04/CSS/css基础05/">05.CSS基础05</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/03/HTML/html基础/">html基础</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/angularJS/浅谈angularJS/">浅谈angularJS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/02/中医箱/装系统/">装系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/02.模块化规则/">02.模块化规则</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/01.NodeJS-introduce/">01.NodeJS-introduce</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/03.api/">03.api</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/04.核心模块之文件模块/">04.核心模块之文件模块</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/06.根据不同请求响应不同的内容/">06.根据不同请求响应不同的内容</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/05.helloworld-node版本/">05.helloworld-node版本</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/07.根据不同的请求响应不同的文件/">07.根据不同的请求响应不同的文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/08.完成一个小型静态资源服务器/">08.完成一个小型静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/09.后台语言模板的渲染/">09.后台语言模板的渲染</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/10.stat/">10.stat</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/11.解决数组为空的问题/">11.解决数组为空的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/12.moment/">12.moment</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/13.模拟静态资源服务器/">13.模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/14.安全的模拟静态资源服务器/">14.安全的模拟静态资源服务器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/15.异步读写文件/">15.异步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/16.同步读写文件/">16.同步读写文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/17.url.parse/">17.url.parse</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/18.commonjs规范/">18.commonjs规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/19.moment的使用/">19.moment的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/20.let关键字/">20.let关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/21.严格模式下的作用域生效demo/">21.严格模式下的作用域生效demo</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/22.const常量/">22.const常量</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/23.模板字符串/">23.模板字符串</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/24.字符串的扩展方法/">24.字符串的扩展方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/25.箭头函数/">25.箭头函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/26.箭头函数的注意点/">26.箭头函数的注意点</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/27.hello world-express/">27.hello world-express</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/28.express的基本路由/">28.express的基本路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/29.网站人口/">29.网站人口</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/01/NodeJS/30.匿名函数传参/">30.匿名函数传参</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/30/01.welcome/">Welcome to robyn's blog</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <!-- <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2020 Robyn
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer> -->
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
