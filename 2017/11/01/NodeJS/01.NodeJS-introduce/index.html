@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="01.NodeJS-introduce, Robyn">
     <meta name="description" content="you are the owner of your career">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -214,17 +203,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -476,10 +454,10 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="NodeJS笔记"><a href="#NodeJS笔记" class="headerlink" title="NodeJS笔记"></a>NodeJS笔记</h1><h3 id="什么是-Node"><a href="#什么是-Node" class="headerlink" title="什么是  Node"></a>什么是  Node</h3><blockquote>
-<p>Node.js® is a JavaScript runtime built on <a href="https://developers.google.com/v8/" target="_blank" rel="noopener">Chrome’s V8 JavaScript engine</a>. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a>, is the largest ecosystem of open source libraries in the world.                  –选自：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
+<p>Node.js® is a JavaScript runtime built on <a href="https://developers.google.com/v8/" target="_blank" rel="external">Chrome’s V8 JavaScript engine</a>. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, <a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a>, is the largest ecosystem of open source libraries in the world.                  –选自：<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
 <p>翻译：</p>
 <p>1) Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。<br>2) Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。<br>3) Node.js 的包管理器 npm，是全球最大的开源库生态系统</p>
-<p>​                                –选自：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a></p>
+<p>​                                –选自：<a href="http://nodejs.cn/" target="_blank" rel="external">http://nodejs.cn/</a></p>
 </blockquote>
 <ul>
 <li><p>NodeJS 是一个构建于Chrome V8 引擎之上的一个JavaScript的运行时环境</p>
@@ -557,7 +535,12 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Chrome V8引擎</span><br><span class="line">    浏览器内核可以分为两个部分，即：渲染引擎和JS引擎。</span><br><span class="line">    渲染引擎：负责对网页语法的解释（如HTML、JavaScript）并渲染网页。 所以，通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。不同的浏览器内核对网页编写语法 的解释也有不同，因此同一网页在不同的内核的浏览器里的渲染（显示）效果也可能不同，这也是网页编写者需要在不同内核的浏览器中测试网页显示效果的原因。</span><br><span class="line">    JS引擎：解析 Javascript语言，执行 javascript语言来实现网页的动态效果</span><br><span class="line">    Chrome V8引擎：作为一个 JavaScript 引擎，最初是服役于 Google Chrome 浏览器的。它随着 Chrome 的第一版发布而发布以及开源。现在它除了 Chrome 浏览器，已经有很多其他的使用者了。诸如 NodeJS、MongoDB、CouchDB 等。</span><br></pre></td></tr></table></figure>
+<pre class=" language-tex"><code class="language-tex">Chrome V8引擎
+    浏览器内核可以分为两个部分，即：渲染引擎和JS引擎。
+    渲染引擎：负责对网页语法的解释（如HTML、JavaScript）并渲染网页。 所以，通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。不同的浏览器内核对网页编写语法 的解释也有不同，因此同一网页在不同的内核的浏览器里的渲染（显示）效果也可能不同，这也是网页编写者需要在不同内核的浏览器中测试网页显示效果的原因。
+    JS引擎：解析 Javascript语言，执行 javascript语言来实现网页的动态效果
+    Chrome V8引擎：作为一个 JavaScript 引擎，最初是服役于 Google Chrome 浏览器的。它随着 Chrome 的第一版发布而发布以及开源。现在它除了 Chrome 浏览器，已经有很多其他的使用者了。诸如 NodeJS、MongoDB、CouchDB 等。
+</code></pre>
 </li>
 </ul>
 <h3 id="为什么要学习NodeJS"><a href="#为什么要学习NodeJS" class="headerlink" title="为什么要学习NodeJS"></a>为什么要学习NodeJS</h3><ul>
@@ -601,13 +584,13 @@
 </li>
 </ul>
 <h3 id="NodeJS-学习资源"><a href="#NodeJS-学习资源" class="headerlink" title="NodeJS 学习资源"></a>NodeJS 学习资源</h3><ul>
-<li>《Node.js 权威指南》：官方API详解：<a href="https://nodejs.org/dist/latest-v6.x/docs/api/" target="_blank" rel="noopener">https://nodejs.org/dist/latest-v6.x/docs/api/</a></li>
-<li>JavaScript 标准参考教程（alpha）: <a href="http://javascript.ruanyifeng.com/nodejs/fs.html" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/nodejs/fs.html</a></li>
-<li>Node 入门：<a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="noopener">http://www.nodebeginner.org/index-zh-cn.html</a></li>
-<li>中文文档（版本比较旧，凑合看）：<a href="http://www.nodeclass.com/api/node.html" target="_blank" rel="noopener">http://www.nodeclass.com/api/node.html</a></li>
-<li>CNODE社区：<a href="http://cnodejs.org" target="_blank" rel="noopener">http://cnodejs.org</a></li>
-<li>CNODE-新手入门：<a href="http://cnodejs.org/getstart" target="_blank" rel="noopener">http://cnodejs.org/getstart</a></li>
-<li>Node.js包教不包会：<a href="https://github.com/alsotang/node-lessons" target="_blank" rel="noopener">https://github.com/alsotang/node-lessons</a></li>
+<li>《Node.js 权威指南》：官方API详解：<a href="https://nodejs.org/dist/latest-v6.x/docs/api/" target="_blank" rel="external">https://nodejs.org/dist/latest-v6.x/docs/api/</a></li>
+<li>JavaScript 标准参考教程（alpha）: <a href="http://javascript.ruanyifeng.com/nodejs/fs.html" target="_blank" rel="external">http://javascript.ruanyifeng.com/nodejs/fs.html</a></li>
+<li>Node 入门：<a href="http://www.nodebeginner.org/index-zh-cn.html" target="_blank" rel="external">http://www.nodebeginner.org/index-zh-cn.html</a></li>
+<li>中文文档（版本比较旧，凑合看）：<a href="http://www.nodeclass.com/api/node.html" target="_blank" rel="external">http://www.nodeclass.com/api/node.html</a></li>
+<li>CNODE社区：<a href="http://cnodejs.org" target="_blank" rel="external">http://cnodejs.org</a></li>
+<li>CNODE-新手入门：<a href="http://cnodejs.org/getstart" target="_blank" rel="external">http://cnodejs.org/getstart</a></li>
+<li>Node.js包教不包会：<a href="https://github.com/alsotang/node-lessons" target="_blank" rel="external">https://github.com/alsotang/node-lessons</a></li>
 <li>朴灵：《深入浅出Node.js》</li>
 </ul>
 <h3 id="NodeJS-安装"><a href="#NodeJS-安装" class="headerlink" title="NodeJS 安装"></a>NodeJS 安装</h3><ul>
@@ -620,8 +603,10 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">判断Node 是否安装成功的方法：</span><br><span class="line">	1.0 打开CMD</span><br><span class="line">	2.0 输入 node + 回车</span><br></pre></td></tr></table></figure>
-<h3 id="Node-中的组成"><a href="#Node-中的组成" class="headerlink" title="Node 中的组成"></a>Node 中的组成</h3><ul>
+<pre><code>判断Node 是否安装成功的方法：
+    1.0 打开CMD
+    2.0 输入 node + 回车
+</code></pre><h3 id="Node-中的组成"><a href="#Node-中的组成" class="headerlink" title="Node 中的组成"></a>Node 中的组成</h3><ul>
 <li>基本语法 ECMAScript<ul>
 <li>var</li>
 <li>if</li>
@@ -686,8 +671,10 @@
 </ul>
 </li>
 </ul>
-<h3 id="path-环境变量"><a href="#path-环境变量" class="headerlink" title="path 环境变量"></a>path 环境变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">问题：为什么不管我们把文件放在哪个目录下面，都可以在CMD中通过Node来运行文件？</span><br><span class="line"></span><br><span class="line">答案：环境变量。</span><br></pre></td></tr></table></figure>
-<ul>
+<h3 id="path-环境变量"><a href="#path-环境变量" class="headerlink" title="path 环境变量"></a>path 环境变量</h3><pre><code>问题：为什么不管我们把文件放在哪个目录下面，都可以在CMD中通过Node来运行文件？
+
+答案：环境变量。
+</code></pre><ul>
 <li>什么是环境变量？<ul>
 <li>在CMD中，我们输入一段字符时，系统会将字符当作一个程序去当前路径下面去找对应的程序，如果有，直接运行</li>
 <li>如果没有，系统会去用户变量对应的路径下去找程序，如果能找到直接运行</li>
@@ -708,13 +695,52 @@
   方法一：通过 CMD 转到文件所在的路径下面：node + 文件名
   方法二：直接找到文件所在目录，在空白处：shift + 右键 ----&gt; 在此外打开命令窗口 ----&gt; 在cmd中输入: node + 文件名
 </code></pre><h4 id="NodeJS-读写文件"><a href="#NodeJS-读写文件" class="headerlink" title="NodeJS 读写文件"></a>NodeJS 读写文件</h4><p>​    读文件：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line">fs.readFile(<span class="string">"./01_hello word.js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (err) &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"读取出错"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(data.toString());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">"./01_hello word.js"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"读取出错"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <p>​    写文件：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line">fs.writeFile(<span class="string">"./00selfbuild.js"</span>,<span class="string">"这是我自己写的内容"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"写入文件失败"</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"写入完成"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h4 id="NodeJS-开启服务器"><a href="#NodeJS-开启服务器" class="headerlink" title="NodeJS 开启服务器"></a>NodeJS 开启服务器</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line">server.on(<span class="string">'request'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'收到客户端请求了'</span>);</span><br><span class="line">	response.write(<span class="string">'&lt;h1&gt;hello word&lt;/h1&gt;'</span>);</span><br><span class="line">	response.write(<span class="string">'over'</span>);</span><br><span class="line">	response.end();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">server.listen( <span class="number">3000</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'服务器启动成功'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">"./00selfbuild.js"</span><span class="token punctuation">,</span><span class="token string">"这是我自己写的内容"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入文件失败"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"写入完成"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="NodeJS-开启服务器"><a href="#NodeJS-开启服务器" class="headerlink" title="NodeJS 开启服务器"></a>NodeJS 开启服务器</h4><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'收到客户端请求了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&lt;h1>hello word&lt;/h1>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'over'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span> <span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'服务器启动成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <h3 id="构建HTTP服务"><a href="#构建HTTP服务" class="headerlink" title="构建HTTP服务"></a>构建HTTP服务</h3><ul>
 <li><p>编写一个响应 “hello word” 服务</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line">server.on(<span class="string">'request'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'收到客户端请求了'</span>);</span><br><span class="line">    response.write(<span class="string">'hello word'</span>);</span><br><span class="line">    response.end();</span><br><span class="line">&#125;);</span><br><span class="line">server.listen( <span class="number">3000</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'服务器启动成功'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'收到客户端请求了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'hello word'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span> <span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'服务器启动成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <ul>
 <li>注意：<ul>
 <li>服务开启之后除了 request 中的内容会执行多次以外，其它的代码只会执行一行 </li>
@@ -724,10 +750,44 @@
 </ul>
 </li>
 <li><p>根据不同请求输出不同响应服务var http = require(‘http’);</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">        <span class="keyword">var</span> server = http.createServer();</span><br><span class="line">        server.on(<span class="string">'request'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">        	<span class="keyword">var</span> url = request.url;</span><br><span class="line">        	<span class="keyword">if</span> ( url == <span class="string">'/'</span>) &#123;</span><br><span class="line">              	response.end(<span class="string">'home index'</span>);</span><br><span class="line">        	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (url == <span class="string">'/a'</span>)&#123;</span><br><span class="line">        		response.end(<span class="string">'aaa index'</span>);</span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        server.listen( <span class="number">3000</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'服务器启动成功'</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">注意：</span><br><span class="line">    所有请求都是以 “/” 开头的</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript">              <span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token keyword">var</span> url <span class="token operator">=</span> request<span class="token punctuation">.</span>url<span class="token punctuation">;</span>
+                  <span class="token keyword">if</span> <span class="token punctuation">(</span> url <span class="token operator">==</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'home index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>url <span class="token operator">==</span> <span class="token string">'/a'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                      response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'aaa index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span> <span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'服务器启动成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      注意：
+          所有请求都是以 “<span class="token operator">/</span>” 开头的
+</code></pre>
 </li>
+</ul>
+<ul>
 <li><p>根据不同请求输出不同文件服务：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line"></span><br><span class="line">server.on(<span class="string">'request'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"> req, res</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> url = req.url;</span><br><span class="line">	<span class="keyword">if</span> (url == <span class="string">'/'</span>) &#123;</span><br><span class="line">		fs.readFile(<span class="string">'./temp/index.html'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>) </span>&#123;</span><br><span class="line">			res.end(data);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> ( url == <span class="string">'/a'</span>) &#123;</span><br><span class="line">		res.end(<span class="string">'请求的是a'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"服务器开启成功"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span> req<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>url <span class="token operator">==</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./temp/index.html'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span> url <span class="token operator">==</span> <span class="token string">'/a'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'请求的是a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"服务器开启成功"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <ul>
 <li>注意：<ul>
 <li>可以通过自己写的服务在不同的页面中跳转，跳转时可以不加ip和端口号</li>
@@ -737,7 +797,24 @@
 </ul>
 </li>
 <li><p>构建一个类似于 Apache 的功能</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>); 	</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">var</span> server = http.createServer();</span><br><span class="line">server.on(<span class="string">'request'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"> req, res</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> url = req.url;</span><br><span class="line">	<span class="keyword">var</span> filePath = <span class="string">'.'</span> + url;</span><br><span class="line">	fs.readFile( filePath, <span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>) </span>&#123;</span><br><span class="line">	   	<span class="keyword">if</span> (err) &#123;</span><br><span class="line">	        res.end(<span class="string">'404 Not Found'</span>)  </span><br><span class="line">	   	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			res.end(data);</span><br><span class="line">		&#125;</span><br><span class="line">	 &#125;);</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">3000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	 <span class="built_in">console</span>.log(<span class="string">"服务器开启成功"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript">        <span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     
+        <span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span> req<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">var</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url<span class="token punctuation">;</span>
+            <span class="token keyword">var</span> filePath <span class="token operator">=</span> <span class="token string">'.'</span> <span class="token operator">+</span> url<span class="token punctuation">;</span>
+            fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span> filePath<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                   <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'404 Not Found'</span><span class="token punctuation">)</span>  
+                   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+             <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"服务器开启成功"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <ul>
 <li><p>注意：文件的命名不能以“/”开头，否则服务器会去当前文件处的磁盘根目录去找到文件</p>
 <p>​</p>
@@ -783,11 +860,41 @@
 </ul>
 <h3 id="文件操作的同步与异步"><a href="#文件操作的同步与异步" class="headerlink" title="文件操作的同步与异步"></a>文件操作的同步与异步</h3><ul>
 <li><p>异步读取文件</p>
-<figure class="highlight plain"><figcaption><span>fs </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">console.log(&apos;111&apos;);</span><br><span class="line"></span><br><span class="line">fs.readFile(&apos;./a.txt&apos;,function(err,data) &#123;</span><br><span class="line"></span><br><span class="line">    console.log(&apos;222&apos;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">fs.readFile(&apos;./b.txt&apos;,function(err,data) &#123;</span><br><span class="line"></span><br><span class="line">    console.log(&apos;333&apos;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">fs.readFile(&apos;./c.txt&apos;,function(err,data) &#123;</span><br><span class="line"></span><br><span class="line">    console.log(&apos;444&apos;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">console.log(&apos;555&apos;);</span><br></pre></td></tr></table></figure>
+<p>``` var fs = require(&#39;fs&#39;);<br>console.log(‘111’);</p>
+<p>fs.readFile(‘./a.txt’,function(err,data) {</p>
+<pre><code>console.log(&#39;222&#39;);
+</code></pre><p>});</p>
+<p>fs.readFile(‘./b.txt’,function(err,data) {</p>
+<pre><code>console.log(&#39;333&#39;);
+</code></pre><p>});</p>
+<p>fs.readFile(‘./c.txt’,function(err,data) {</p>
+<pre><code>console.log(&#39;444&#39;);
+</code></pre><p>});</p>
+<p>console.log(‘555’);<br>```</p>
 </li>
 <li><p>同步读取文件</p>
-<pre><code>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">var fs = require(&apos;fs&apos;);</span><br><span class="line"></span><br><span class="line">console.log(&apos;111&apos;);</span><br><span class="line"></span><br><span class="line">var dataA = fs.readFileSync(&apos;./a.txt&apos;).toString();</span><br><span class="line">console.log(&apos;222&apos;);</span><br><span class="line">console.log(dataA);</span><br><span class="line"></span><br><span class="line">var dataB = fs.readFileSync(&apos;./a.txt&apos;).toString();</span><br><span class="line">console.log(&apos;333&apos;);</span><br><span class="line">console.log(dataB);</span><br><span class="line"></span><br><span class="line">var dataC = fs.readFileSync(&apos;./a.txt&apos;).toString();</span><br><span class="line">console.log(&apos;444&apos;);</span><br><span class="line">console.log(dataC);</span><br><span class="line"></span><br><span class="line">console.log(&apos;555&apos;);</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<pre><code>  ​```
+  var fs = require(&#39;fs&#39;);
+
+  console.log(&#39;111&#39;);
+
+  var dataA = fs.readFileSync(&#39;./a.txt&#39;).toString();
+  console.log(&#39;222&#39;);
+  console.log(dataA);
+
+  var dataB = fs.readFileSync(&#39;./a.txt&#39;).toString();
+  console.log(&#39;333&#39;);
+  console.log(dataB);
+
+  var dataC = fs.readFileSync(&#39;./a.txt&#39;).toString();
+  console.log(&#39;444&#39;);
+  console.log(dataC);
+
+  console.log(&#39;555&#39;);
+  ​```
 </code></pre></li>
+</ul>
+<ul>
 <li><p>区别：</p>
 <ul>
 <li>异步：<ul>
@@ -852,16 +959,23 @@
 <li><p>使用步骤：</p>
 <ul>
 <li><p>第一，安装 nodemon</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">简写：npm i -g nodemon</span><br><span class="line"></span><br><span class="line">全称：npm install --global nodemon</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>简写：npm i -g nodemon
+
+全称：npm install --global nodemon
+</code></pre></li>
 <li><p>第二，基本使用：</p>
-<pre><code>​<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> 以前的做法：node app.js</span><br><span class="line"></span><br><span class="line"> 现在的做法：nodemon app.js </span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<pre><code>​```
+ 以前的做法：node app.js
+
+ 现在的做法：nodemon app.js 
+​```
+
+### 使用 nodemon 实现改完代码服务自动重启
 </code></pre></li>
 </ul>
 </li>
 </ul>
-<pre><code>### 使用 nodemon 实现改完代码服务自动重启
-</code></pre><ul>
+<ul>
 <li><p>nodemon 是一个基于 Node 开发的一个命令行工具，</p>
 <ul>
 <li>可以实现监视代码改动，自动重启服务的功能。</li>
@@ -871,11 +985,13 @@
 <li><p>使用步骤：</p>
 <ul>
 <li><p>第一，安装 nodemon</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">简写：npm i -g nodemon</span><br><span class="line">全称：npm install --global nodemon</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>简写：npm i -g nodemon
+全称：npm install --global nodemon
+</code></pre></li>
 <li><p>第二，基本使用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">以前的做法：node app.js</span><br><span class="line">现在的做法：nodemon app.js</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>   以前的做法：node app.js
+   现在的做法：nodemon app.js
+</code></pre></li>
 </ul>
 </li>
 </ul>
@@ -888,8 +1004,12 @@
 <li>模块最终返回的仅仅只是 modules.exports</li>
 <li>exports 仅仅只是 modules.exports的一个引用</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">验证module.exports与exports的关系：</span><br><span class="line">	1）console.log(module.exports === exports);</span><br><span class="line">	2）exports.a = 123;</span><br><span class="line">	3）exports = fucntion() &#123;&#125;</span><br><span class="line">	4）exports = modules.exports =  fucntion() &#123;&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>验证module.exports与exports的关系：
+    1）console.log(module.exports === exports);
+    2）exports.a = 123;
+    3）exports = fucntion() {}
+    4）exports = modules.exports =  fucntion() {}
+</code></pre></li>
 <li><p>模块加载机制</p>
 <ul>
 <li><p>require关键字：</p>
@@ -933,25 +1053,33 @@
 <li>如果上一级还找不到，继续向上，一直到当前文件所属磁盘的根目录</li>
 <li>如果到磁盘概目录还没有找到，直接报错</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">核心模块：</span><br><span class="line">	由 Node 本身提供，通过唯一的模块标识名进行加载</span><br><span class="line">	核心模块本质上也是文件模块，它已经被编译到可执行文件中了</span><br><span class="line">第三方模块</span><br><span class="line">用户自定义模块</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>核心模块：
+    由 Node 本身提供，通过唯一的模块标识名进行加载
+    核心模块本质上也是文件模块，它已经被编译到可执行文件中了
+第三方模块
+用户自定义模块
+</code></pre></li>
 </ul>
 </li>
 <li><p>模块的兼容处理</p>
 <ul>
 <li><p>有些模块即能在浏览器端使用，又能在服务器端使用，是因为它们作了兼容处理（如：moment）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function (global, factory) &#123;</span><br><span class="line">    typeof exports === &apos;object&apos; &amp;&amp; typeof module !== &apos;undefined&apos; ? module.exports = factory() :typeof define === &apos;function&apos; &amp;&amp; define.amd ? define(factory) :</span><br><span class="line">    global.moment = factory()</span><br><span class="line">&#125;(this, (function () &#123; &apos;use strict&apos;;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>(function (global, factory) {
+    typeof exports === &#39;object&#39; &amp;&amp; typeof module !== &#39;undefined&#39; ? module.exports = factory() :typeof define === &#39;function&#39; &amp;&amp; define.amd ? define(factory) :
+    global.moment = factory()
+}(this, (function () { &#39;use strict&#39;;
+</code></pre></li>
 </ul>
 </li>
 </ul>
-<h3 id="文件上传第三方包：formidable"><a href="#文件上传第三方包：formidable" class="headerlink" title="文件上传第三方包：formidable"></a>文件上传第三方包：formidable</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在表单中如果想上传文件必须将表单中的属性：enctype 设置为 multipart/form-data才可以。</span><br></pre></td></tr></table></figure>
-<h2 id="ECMAScript-6-2015"><a href="#ECMAScript-6-2015" class="headerlink" title="ECMAScript 6 (2015)"></a>ECMAScript 6 (2015)</h2><ul>
+<h3 id="文件上传第三方包：formidable"><a href="#文件上传第三方包：formidable" class="headerlink" title="文件上传第三方包：formidable"></a>文件上传第三方包：formidable</h3><pre><code>    在表单中如果想上传文件必须将表单中的属性：enctype 设置为 multipart/form-data才可以。
+</code></pre><h2 id="ECMAScript-6-2015"><a href="#ECMAScript-6-2015" class="headerlink" title="ECMAScript 6 (2015)"></a>ECMAScript 6 (2015)</h2><ul>
 <li><p>严格模式</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span></span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token string">'use strict'</span>
+</code></pre>
 <ul>
 <li>如果开启了严格模式，变量不能直接使用，必须先申明，申明变量时一定要用var / let</li>
-<li>更多介绍：<a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html</a></li>
+<li>更多介绍：<a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html</a></li>
 </ul>
 </li>
 <li><p>申明一个变量(let)</p>
@@ -979,7 +1107,14 @@
 <li><p>endsWith() ：返回布尔值，表示参数字符串是否在源字符串的尾部</p>
 </li>
 <li><p>repeat()：返回一个新字符串，表示将原字符串重复n次</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = “hello world”;</span><br><span class="line">s.startsWith(‘hello’) <span class="comment">//true</span></span><br><span class="line">s.startsWith(‘world’,<span class="number">6</span>) <span class="comment">//true   ，表示从第6个开始后面的字符是 world</span></span><br><span class="line">s.endWith(‘hello’,<span class="number">5</span>) <span class="comment">//true ，表示前5个字符是hello</span></span><br><span class="line">‘x’.repeat(<span class="number">2</span>)  <span class="comment">// “xx”</span></span><br><span class="line">‘hello’.repeat(<span class="number">2</span>)  <span class="comment">// “hellohello”</span></span><br><span class="line">‘ivan’.repeat(<span class="number">0</span>)  <span class="comment">// “”</span></span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> s <span class="token operator">=</span> “hello world”<span class="token punctuation">;</span>
+s<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>‘hello’<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//true</span>
+s<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>‘world’<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//true   ，表示从第6个开始后面的字符是 world</span>
+s<span class="token punctuation">.</span><span class="token function">endWith</span><span class="token punctuation">(</span>‘hello’<span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//true ，表示前5个字符是hello</span>
+‘x’<span class="token punctuation">.</span><span class="token function">repeat</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// “xx”</span>
+‘hello’<span class="token punctuation">.</span><span class="token function">repeat</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// “hellohello”</span>
+‘ivan’<span class="token punctuation">.</span><span class="token function">repeat</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// “”</span>
+</code></pre>
 </li>
 </ul>
 </li>
@@ -991,33 +1126,111 @@
 </ul>
 </li>
 <li><p>箭头函数的推演</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">写法<span class="number">1</span>: arr.sort(<span class="function"><span class="keyword">function</span>(<span class="params">x,y</span>)</span>&#123;<span class="keyword">return</span> x - y ;&#125;);</span><br><span class="line">写法<span class="number">2</span>：arr.sort(<span class="function">(<span class="params">x,y</span>) =&gt;</span> &#123;<span class="keyword">return</span> x - y ;&#125;);</span><br><span class="line">写法<span class="number">3</span>：arr.sort(<span class="function">(<span class="params">x,y</span>) =&gt;</span> x - y);</span><br></pre></td></tr></table></figure>
+<pre class=" language-javascript"><code class="language-javascript">写法<span class="token number">1</span><span class="token punctuation">:</span> arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span> x <span class="token operator">-</span> y <span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+写法<span class="token number">2</span>：arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span><span class="token keyword">return</span> x <span class="token operator">-</span> y <span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+写法<span class="token number">3</span>：arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> x <span class="token operator">-</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 </li>
 <li><p>箭头函数的其它写法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如果参数只有一个，可以将()省略    // arr.map(c=&gt;c+1);</span><br><span class="line">如果没有参数，则一定能要写上()     // ()=&gt; console.log(‘a’)</span><br><span class="line">如果多于一个参数，每个参数之间用逗号分隔   (x, y) =&gt; &#123; ... &#125;</span><br><span class="line">如果方法体只有一句代码，可以省略&#123;&#125; 和分号，如果有返回可以省略return</span><br><span class="line">如果方法体多于一句代码，则不能省略&#123;&#125; ,每句代码使用 分号分隔</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>如果参数只有一个，可以将()省略    // arr.map(c=&gt;c+1);
+如果没有参数，则一定能要写上()     // ()=&gt; console.log(‘a’)
+如果多于一个参数，每个参数之间用逗号分隔   (x, y) =&gt; { ... }
+如果方法体只有一句代码，可以省略{} 和分号，如果有返回可以省略return
+如果方法体多于一句代码，则不能省略{} ,每句代码使用 分号分隔
+</code></pre></li>
 <li><p>箭头函数的一些特点</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a.箭头函数没有自己的this，函数体内部写的this，指向的是外层代码块的this</span><br><span class="line">b.箭头函数内部的this是定义时所在的对象，而不是使用时所在的对象并且不会改变</span><br><span class="line">c.箭头箭头函数不能用作构造函数</span><br><span class="line">d.箭头函数内部不存在arguments，箭头函数体中使用的arguments其实指向的是外层函数的arguments</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>a.箭头函数没有自己的this，函数体内部写的this，指向的是外层代码块的this
+b.箭头函数内部的this是定义时所在的对象，而不是使用时所在的对象并且不会改变
+c.箭头箭头函数不能用作构造函数
+d.箭头函数内部不存在arguments，箭头函数体中使用的arguments其实指向的是外层函数的arguments
+</code></pre></li>
 </ul>
 <h2 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h2><ul>
-<li>作者：<a href="https://github.com/tj" target="_blank" rel="noopener">https://github.com/tj</a></li>
-<li>Github：<a href="https://github.com/expressjs/express" target="_blank" rel="noopener">https://github.com/expressjs/express</a></li>
-<li>官网：<a href="http://expressjs.com/" target="_blank" rel="noopener">http://expressjs.com/</a></li>
-<li>中文翻译：<a href="http://www.expressjs.com.cn/" target="_blank" rel="noopener">http://www.expressjs.com.cn/</a></li>
-<li>awesome-express: <a href="https://github.com/wabg/awesome-express" target="_blank" rel="noopener">https://github.com/wabg/awesome-express</a></li>
+<li>作者：<a href="https://github.com/tj" target="_blank" rel="external">https://github.com/tj</a></li>
+<li>Github：<a href="https://github.com/expressjs/express" target="_blank" rel="external">https://github.com/expressjs/express</a></li>
+<li>官网：<a href="http://expressjs.com/" target="_blank" rel="external">http://expressjs.com/</a></li>
+<li>中文翻译：<a href="http://www.expressjs.com.cn/" target="_blank" rel="external">http://www.expressjs.com.cn/</a></li>
+<li>awesome-express: <a href="https://github.com/wabg/awesome-express" target="_blank" rel="external">https://github.com/wabg/awesome-express</a></li>
 </ul>
 <h3 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h3><p>安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save express</span><br></pre></td></tr></table></figure>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save express
+</code></pre>
 <p>hello world：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">var</span> app = express()</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'Hello World!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">3000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Example app listening on port 3000!'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Example app listening on port 3000!'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
 <p>基本路由：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">app.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'Hello World!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.post(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'Got a POST request'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.put(<span class="string">'/user'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'Got a PUT request at /user'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.delete(<span class="string">'/user'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'Got a DELETE request at /user'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<pre class=" language-js"><code class="language-js">app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Hello World!'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Got a POST request'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Got a PUT request at /user'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token keyword">delete</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'Got a DELETE request at /user'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
 <h3 id="Express-中外置路由使用"><a href="#Express-中外置路由使用" class="headerlink" title="Express 中外置路由使用"></a>Express 中外置路由使用</h3><p>router.js 文件代码如下:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 加载 express 模块</span></span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 调用 express.Router() 方法，得到一个路由容器实例</span></span><br><span class="line"><span class="keyword">var</span> router = express.Router()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3. 为 router 添加不同的路由</span></span><br><span class="line">router.get(<span class="string">'/'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(<span class="string">'hello express'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/add'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/info'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 4. 将 router 路由容器导出</span></span><br><span class="line"><span class="built_in">module</span>.exports = router</span><br></pre></td></tr></table></figure>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 1. 加载 express 模块</span>
+<span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 2. 调用 express.Router() 方法，得到一个路由容器实例</span>
+<span class="token keyword">var</span> router <span class="token operator">=</span> express<span class="token punctuation">.</span><span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 3. 为 router 添加不同的路由</span>
+router<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'hello express'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/add'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/info'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 4. 将 router 路由容器导出</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router
+</code></pre>
 <p>在 app.js 文件中：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. 加载路由模块</span></span><br><span class="line"><span class="keyword">var</span> router = <span class="built_in">require</span>(<span class="string">'./router'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app = express()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 将路由模块导出的路由容器 router 通过 app.use() 方法挂载到 app 实例上</span></span><br><span class="line"><span class="comment">//    这样的话咱们的 app 实例程序就拥有了 router 的路由了</span></span><br><span class="line">app.use(router)</span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">3000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'running...'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="在-Express-中处理静态资源"><a href="#在-Express-中处理静态资源" class="headerlink" title="在 Express 中处理静态资源"></a>在 Express 中处理静态资源</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.static(<span class="string">'public'</span>))</span><br><span class="line">app.use(express.static(<span class="string">'files'</span>))</span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/public'</span>, express.static(<span class="string">'public'</span>))</span><br><span class="line">app.use(<span class="string">'/aaa'</span>, express.static(<span class="string">'public'</span>))</span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/static'</span>, express.static(path.join(__dirname, <span class="string">'public'</span>)))</span><br></pre></td></tr></table></figure>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 1. 加载路由模块</span>
+<span class="token keyword">var</span> router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./router'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// 2. 将路由模块导出的路由容器 router 通过 app.use() 方法挂载到 app 实例上</span>
+<span class="token comment" spellcheck="true">//    这样的话咱们的 app 实例程序就拥有了 router 的路由了</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>router<span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'running...'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="在-Express-中处理静态资源"><a href="#在-Express-中处理静态资源" class="headerlink" title="在 Express 中处理静态资源"></a>在 Express 中处理静态资源</h3><pre class=" language-js"><code class="language-js">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'files'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/public'</span><span class="token punctuation">,</span> express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/aaa'</span><span class="token punctuation">,</span> express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/static'</span><span class="token punctuation">,</span> express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1043,7 +1256,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://robynnnn.gitee.io/2017/11/01/NodeJS/01.NodeJS-introduce/">https://robynnnn.gitee.io/2017/11/01/NodeJS/01.NodeJS-introduce/</a>
+                    <a href="https://robynnnn.gitee.io/2017/11/01/nodejs/01.nodejs-introduce/">https://robynnnn.gitee.io/2017/11/01/nodejs/01.nodejs-introduce/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1128,31 +1341,40 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/08.完成一个小型静态资源服务器/">
+                <a href="/2017/11/02/angularjs/qian-tan-angularjs/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="08.完成一个小型静态资源服务器">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="浅谈angularJS">
                         
-                        <span class="card-title">08.完成一个小型静态资源服务器</span>
+                        <span class="card-title">浅谈angularJS</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1234567891011121314151617181920212223242526272829303132333435363738394041424344454647//引入http核心模块var http = require("htt
+                            
+1  Angular简称NG
+2 Angular的重要特性
+MVC: 在前端引入了MVC的设计模式.
+模块化开发
+自动的双向数据绑定
+语义化标签(自定义标签)
+依赖注入
+其核心就是通过指令扩展了HTML,通过表达式绑定数据到HTML
+An
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2017-11-02
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
+                            <a href="/categories/angularJS/" class="post-category">
+                                    angularJS
                                 </a>
                             
                             
@@ -1162,8 +1384,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/NodeJS/">
-                        <span class="chip bg-color">NodeJS</span>
+                    <a href="/tags/angularJS/">
+                        <span class="chip bg-color">angularJS</span>
                     </a>
                     
                 </div>
@@ -1177,29 +1399,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/09.后台语言模板的渲染/">
+                <a href="/2017/11/01/nodejs/02.mo-kuai-hua-gui-ze/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="09.后台语言模板的渲染">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="02.模块化规则">
                         
-                        <span class="card-title">09.后台语言模板的渲染</span>
+                        <span class="card-title">02.模块化规则</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            #####1. 首先先去官网查找模板的相关使用
-
-https://www.npmjs.com/
-
-在这个网站上输入关键字art-template
-
-
-
-
-
-https://aui.github.io/art-template/zh-cn/i
+                            //CMD规范：
+//  定义模块：define
+//  暴露接口：不需要暴露
+//  引用模块：关键字：require
+//NodeJS规范：
+//  定义模块：不需要使用任何关键字，直接创建一个js文件，它就是一个单独的模块
+//  暴
                         
                     </div>
                     <div class="publish-info">
@@ -1421,6 +1639,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
             
             
             

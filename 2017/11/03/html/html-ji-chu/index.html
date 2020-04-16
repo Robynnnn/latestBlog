@@ -1,0 +1,1130 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html基础, Robyn">
+    <meta name="description" content="you are the owner of your career">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>html基础 | Robyn</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Robyn</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Robyn</div>
+        <div class="logo-desc">
+            
+            you are the owner of your career
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">html基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/HTML基础/">
+                                <span class="chip bg-color">HTML基础</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/HTML基础/" class="post-category">
+                                HTML基础
+                            </a>
+                        
+                            <a href="/categories/HTML基础/HTML基础/" class="post-category">
+                                HTML基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2017-11-03
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="一、-前端介绍"><a href="#一、-前端介绍" class="headerlink" title="一、 前端介绍"></a>一、 前端介绍</h1><ul>
+<li><h2 id="1-1-什么是前端？"><a href="#1-1-什么是前端？" class="headerlink" title="1.1 什么是前端？"></a>1.1 什么是前端？</h2><blockquote>
+<p>前端就是提供给用户操作的界面。</p>
+<pre><code> 前端开发就是创造界面的过程。
+</code></pre></blockquote>
+</li>
+<li><h2 id="1-2-前端开发方向"><a href="#1-2-前端开发方向" class="headerlink" title="1.2 前端开发方向"></a>1.2 前端开发方向</h2><blockquote>
+<p>前端开发工程师：</p>
+<pre><code>        → PC Web、 移动 Web、 混合app 
+</code></pre><p>后端开发工程师：</p>
+<pre><code>        → Java、PHP、.NET、Node
+</code></pre><p>全栈开发工程师：</p>
+<pre><code>        → 前后端都会。
+</code></pre></blockquote>
+</li>
+<li><h2 id="1-3-前端的“钱”景"><a href="#1-3-前端的“钱”景" class="headerlink" title="1.3 前端的“钱”景"></a>1.3 前端的“钱”景</h2><p><img src="http://upload-images.jianshu.io/upload_images/5006978-44b9874dfcb68950.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</li>
+<li><h2 id="1-4-技术方向"><a href="#1-4-技术方向" class="headerlink" title="1.4 技术方向"></a>1.4 技术方向</h2><blockquote>
+<p>HTML</p>
+<pre><code>        → 用来描述网页结构和内容。相当于描述人的身体结构和五脏六腑
+</code></pre></blockquote>
+</li>
+</ul>
+<blockquote>
+<p>CSS<br>              → 用来美化网页。相当于人穿衣服化妆一样。</p>
+<p>JS<br>       → 用来实现网页动态效果。相当于人有一些有趣的行为一样</p>
+</blockquote>
+<ul>
+<li><h2 id="1-5-快捷键"><a href="#1-5-快捷键" class="headerlink" title="1.5 快捷键"></a>1.5 快捷键</h2><blockquote>
+<p>Ctrl+C:复制                Ctrl+V:粘贴<br>Ctrl+X:剪切                Ctrl+S:保存<br>Ctrl+A:全选<br>Ctrl+Z:撤销上一个操作   CTRL＋Y：还原上一个操作<br>Alt+tab:切换程序(注意整个操作过程alt常按)<br>Win+D(鼠标点击屏幕的右下角)：切换到桌面<br>Win+R：快速运行，打开软件，cmd命令行等<br>  mspaint:运行画图工具<br>  notepad:运行记事本<br>  calc：计算器<br>  osk：虚拟键盘<br>Win+L:锁屏                F5:刷新<br>Alt +f4:退出程序</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="2、-认识浏览器"><a href="#2、-认识浏览器" class="headerlink" title="2、 认识浏览器"></a>2、 认识浏览器</h1><p><img src="http://upload-images.jianshu.io/upload_images/5006978-83f28111388e9766.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p> 什么是浏览器：<br>              → 就是用来浏览器网页的工具或软件</p>
+<p> 浏览器的种类：<br>              → IE浏览器、谷歌浏览器、火狐浏览器、苹果浏览器、欧朋浏览器…</p>
+<p> 浏览器内核：<br>              → 内核（Rendering Engine）：可大概译为“渲染引擎”，不过我们一般习惯将之称为“浏览器内核”。负责对网页语法的解释（如标准通用标记语言下的一个应用HTML、JavaScript）并渲染（显示）网页。<br>              网页对普通用户来说就是一个可操作的界面，但对于我们开发者或浏览器而言，网页就是代码。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-ba921222cf4d3a5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>浏览器内核就相当于一个“翻译官”，将我们的所写的代码翻译成一个可视化的界面。<br>内核的分类：<br>       → Trident：ie , 猎豹安全浏览器,360极速浏览器,百度浏览器…<br>       → Gecko：Firefox<br>       → Webkit：Safari<br>       → Blink：Chrome，Opera<br>       不同的内核在渲染同一内容的时候会有差别。</p>
+</blockquote>
+<h1 id="3、认识服务器"><a href="#3、认识服务器" class="headerlink" title="3、认识服务器"></a>3、认识服务器</h1><blockquote>
+<p>什么是服务器？<br>       服务器，简单理解就是一个配置比较高的，需要一天24小时运行的超级电脑。<br>       我们将来所开发好的项目或网站都要部署在服务器上，接入互联网，被全世界访问。</p>
+</blockquote>
+<h1 id="4、HTML"><a href="#4、HTML" class="headerlink" title="4、HTML"></a>4、HTML</h1><ul>
+<li><h2 id="4-1-什么是HTML"><a href="#4-1-什么是HTML" class="headerlink" title="4.1 什么是HTML?"></a>4.1 什么是HTML?</h2><blockquote>
+<p>HTML (Hyper Text Markup Language),超文本标记语言</p>
+<pre><code> → 超文本
+              就是比普通的文本要牛！ 就好像超人 与 普通人一样。
+ → 标记
+              也被称为“标签”，超文本之所以比普通文本牛，就是因为有特殊的标记。
+ → 语言
+        沟通方式，和浏览器说话用的语言。
+</code></pre></blockquote>
+</li>
+</ul>
+<blockquote>
+<p>所以，超文本标记语言就是通过一些特殊的标记告诉网页中应当显示什么。</p>
+<p>作用：<br>              用来描述网页结构和内容。相当于描述人的身体结构和五脏六腑</p>
+</blockquote>
+<ul>
+<li><h2 id="4-2-HTML的标准和主流版本"><a href="#4-2-HTML的标准和主流版本" class="headerlink" title="4.2 HTML的标准和主流版本"></a>4.2 HTML的标准和主流版本</h2><blockquote>
+<p>W3C（World Wide Web Consortium）</p>
+<pre><code>        → 万维网联盟，万维网联盟创建于1994年，是Web技术领域最具权威和影响力的国际中立性技术标准机构。
+        → 制定了HTML的标准。
+        → 提供了工具书（手册）
+</code></pre></blockquote>
+</li>
+</ul>
+<blockquote>
+<p>HTML主流版本：<br>       → HTML4.01<br>       → XHTML1.0<br>       → HTML 5.0  推荐使用的版本</p>
+</blockquote>
+<p>网页构架<br><img src="http://upload-images.jianshu.io/upload_images/5006978-88391b9765030ccf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-bfa83fe2dcb5e0d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>注意：<br>→ 将来在使用DOCTYPE的时候建议使用html5的类型。每个页面都要设置一个doctype，如果不设置，浏览器会默认开启quirks mode（怪异模式）解析（quirks mode（怪异模式）是浏览器为了兼容很早之前针对旧版本浏览器设计、并未严格遵循 W3C 标准的网页而产生的一种页面渲染模式）<br>→ 在主体中所看的内容，都要写在body标签中</p>
+</blockquote>
+<h2 id="5、开发工具"><a href="#5、开发工具" class="headerlink" title="5、开发工具"></a>5、开发工具</h2><p>我常用的开发工具就是如下图标：<br>微软的 <a href="https://code.visualstudio.com/" target="_blank" rel="external">visual studio code</a> 以及 <a href="http://www.jetbrains.com/webstorm/" target="_blank" rel="external">Webstorm</a><br><img src="http://upload-images.jianshu.io/upload_images/5006978-fa788f3782c49da3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>vscode( visual studio code 简称) 是目前打开速度比较快的编辑器，建议使用。插件推荐使用如下：<br><img src="http://upload-images.jianshu.io/upload_images/5006978-2c3bf6e24e4ec1cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-b800de8aa5b7223d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-58ea5cae6c22a8c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-9bcf2cc83bbe238a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-f52ac07c451002c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-4dcc0505ad55ba6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-4e78842387de1562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-447c0400f8b01946.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="6、HTML标签"><a href="#6、HTML标签" class="headerlink" title="6、HTML标签"></a>6、HTML标签</h2><blockquote>
+<p>h标签：<br>       作用：表示一个标题<br>       语法：h1到h6分六个等级<br>       </p><h1>标题</h1><br>       <h2>标题</h2><br>              …<br>              <h6>标题</h6><br>语义（含义）：标题<br>       特点：独占一行，上下有默认间距。<p></p>
+<p>p标签：<br>       作用：表示一个段落。<br>       语法：<br>                     </p><p>段落</p><br>       语义：段落<br>       特点：独占一行，上下有默认间距<p></p>
+<p>title标签：<br>       作用：表示网页的名称<br>       语法：<br>              <title>网页的名称</title><br>       语义：网页名称<br>       特点：写在head标签里。</p>
+<p>br标签：<br>       作用：实现换行<br>       语法：<br>                     &lt; br &gt;</p>
+<p>hr标签：<br>       作用：表示一条水平线<br>       语法：<br>                     &lt; hr &gt;</p>
+<p>meta标签：<br>       作用：用作网页配置<br>       语法：<br>                     <meta><br>       meta标签属性：<br>                     charset,表示字符集，将来会告诉浏览器在解析网页中的内容时，按照哪种编码解析，具体按照哪种编码由等号后面的值决定。<br>              如：<meta charset="utf-8"><br>       特点：写在head标签里且写在最上面。<br>注意：<br>              创建好的文件以及文件中的内容会按指定的编码格式转换成二进制（0和1）存放到硬盘里。读取时，也会按照之前保存到硬盘里的编码格式把二进制转换成我们能够看到懂的内容显示。</p>
+<p>  若读取时的编码格式与保存时的编码格式不一致，则会造成内容混乱（乱码）。<br>  常用字符集（字库）：<br>       utf-8:<br>              国际通用字符集<br>       gb2312:<br>              简体中文字符集和英文、数字和少量的特殊符号<br>       gbk:<br>              简体中文字符集和繁体中文字符、英文、数字和少量的特殊符号</p>
+</blockquote>
+<pre><code>   相同点：
+          都是字符的编码格式
+   区别：
+          大小：
+                 utf-8&gt;gbk&gt;gb2312
+          性能：
+                 uft-8&lt;gbk&lt;gb2312
+</code></pre><p>需要了解一下的标签：<br><img src="http://upload-images.jianshu.io/upload_images/5006978-8f176a741c105c65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>img标签：<br><img src="http://upload-images.jianshu.io/upload_images/5006978-9fc78957af0361a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>路径：<br>绝对路径：（了解）<br>       带有盘符的路径。<br>              如：C:/Users/Bruce/Desktop/01-HTML第一天\02-其他资料\案例\04春夏秋冬/images/chun.jpg<br>缺点：可移植性差<br>​<br>带有网址的路径：<br>              如：<a href="https://img12.360buyimg.com/da/jfs/t3172/29/7532815266/78514/96c6e177/58ba3348N479cafe1.jpg" target="_blank" rel="external">https://img12.360buyimg.com/da/jfs/t3172/29/7532815266/78514/96c6e177/58ba3348N479cafe1.jpg</a></p>
+<p>相对路径：（重点）<br>       图片和html文件在同一目录时，html文件可以直接使用图片</p>
+</blockquote>
+<pre><code>   html文件在图片的上级目录时，html文件需要先找到图片所在的目录，进去再找图片。
+
+   图片在html文件的上级目录时，html文件需要先返回上级目录，再去找图片。
+</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/5006978-bd67d42fb481adec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-c57486a6cc498dae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-3412f5f4a8219707.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-52b8ee5290f8e040.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-d8ab1cf85c0b0449.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5006978-ccbf159ac0970ef9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>单元格合并：</p>
+<ul>
+<li>横向合并：<pre class=" language-base"><code class="language-base">colspan:
+<td colspan="4">统计：</td>   /横向合并4个单元格
+</code></pre>
+</li>
+<li>纵向合并：<pre class=" language-base"><code class="language-base">rowspan:
+<td rowspan="4">蜀国</td>   /纵向合并4个单元格
+</code></pre>
+</li>
+</ul>
+<p>表单元素：<br><img src="http://upload-images.jianshu.io/upload_images/5006978-9e500966a7cae523.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>注册页面上能够填写的内容都是我们的表单元素。<br>作用：用来收集用户的信息，将来提交到服务器。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/5006978-944ed3042db5b362.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>注意点：如果想要多个radio或者checkbox组成一个选择集合，那么必须给每个radio以及checkbox都设置相同name属性。<br>如何给radio,checkbox设置默认值呢？<br>设置另外一个属性：checked=”checked”<br>    我需要给下拉框设置默认值？<br>selected=”selected”<br>如果下拉按钮想多选，</p>
+<pre class=" language-base"><code class="language-base"><select size="4" multiple="multiple">      /*size的意思就是框的大小
+</code></pre>
+</blockquote>
+<h1 id="7、Html中空格的合并现象："><a href="#7、Html中空格的合并现象：" class="headerlink" title="7、Html中空格的合并现象："></a>7、Html中空格的合并现象：</h1><blockquote>
+<p>特点：无论在页面有同时出现多少个空格，缩进，换行，将来浏览器在解析的时候只会当一个空格显示。<br>结论：html中对空格，缩进，换行不敏感，如果同时出现多个空格缩进或者执行，页面只会把它们当作一个空格来解析。<br>特殊字符对应的转译符：<br><img src="http://upload-images.jianshu.io/upload_images/5006978-a274d086f721a078.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+</blockquote>
+<h1 id="8、SEO与标签的语义化："><a href="#8、SEO与标签的语义化：" class="headerlink" title="8、SEO与标签的语义化："></a>8、SEO与标签的语义化：</h1><blockquote>
+<p>SEO：搜索引擎优化。<br>作用：用来优化网站，使用网站在搜索引擎上的排名先前。<br>百度是如何收录一个网站的信息的呢？<br>百度自己写的一个程序来收录每个网站的信息。<br>标签语义化的应用：每个html标签都有属于自己的语义，有使用标签时候要一定要了解每个标签的语义，合理使用。（在合适的地方使用合适的标签。）<br>语义化的好处：<br>01对搜索引擎的友好（将来网络爬虫进入页面之后可以很方便的得到页面的重要信息。）<br>02提升用户体验<br>03利于代码的可读、维护、提高开发效率.<br>Html中大部分的标签都具有语义，所在使用的时候一定要注意。还有一部分标签没有语义，没有语义的标签一般只用来进行布局。</p>
+</blockquote>
+<h2 id="9、HTML总结"><a href="#9、HTML总结" class="headerlink" title="9、HTML总结"></a>9、HTML总结</h2><blockquote>
+<p>html:超文本标记语言。可以表示图片，音频，视频，超连接（a）.<br>html的作用：用来页面的内容添加语义，用来确定html页面的结构。<br>html：决定页面的结构（给内容添加语义） 骨骼<br>css: 决定页面的样式（使用页面更好看）   穿着<br>JavaScript:决定页面的行为（使页面动起来） 行为</p>
+</blockquote>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://robynnnn.gitee.io" rel="external nofollow noreferrer">Robyn</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://robynnnn.gitee.io/2017/11/03/html/html-ji-chu/">https://robynnnn.gitee.io/2017/11/03/html/html-ji-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://robynnnn.gitee.io" target="_blank">Robyn</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/HTML基础/">
+                                    <span class="chip bg-color">HTML基础</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2017/11/04/css/css-ji-chu-05/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="05.CSS基础05">
+                        
+                        <span class="card-title">05.CSS基础05</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1、定位
+定位，可以把盒子摆放到页面中任意位置的技术。标签流：浮动:定位：
+
+1.2 定位的分类
+静态定位【static】：默认的标准流定位方式。绝对定位【absolute】：相对于浏览器边缘定位。相对定位【relative】：相对于原来的
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2017-11-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CSS/" class="post-category">
+                                    CSS
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2017/11/02/zhong-yi-xiang/zhuang-xi-tong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="装系统">
+                        
+                        <span class="card-title">装系统</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            #准备工作：
+
+大白菜U盘（至少16G，内含以下工具）
+win7、win8、win10的ISO中的boot、bootmgr、sources文件（下面简称“系统三文件”）系统下载地址
+激活工具(百度自己找)
+office2016安装包
+net
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/中医箱/" class="post-category">
+                                    中医箱
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/系统/">
+                        <span class="chip bg-color">系统</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="tencent"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2017</span>
+            <a href="https://robynnnn.gitee.io" target="_blank">Robyn</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/robynnnn" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:robynnnn@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=291438525" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 291438525" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

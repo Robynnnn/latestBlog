@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="10.stat, Robyn">
     <meta name="description" content="you are the owner of your career">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -214,17 +203,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -471,7 +449,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引用核心模板</span></span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//判断路径</span></span><br><span class="line"><span class="comment">//stat方法可以得到文件的状态</span></span><br><span class="line"><span class="comment">//  这个方法有两个参数：</span></span><br><span class="line"><span class="comment">//      参数一：要判断的路径</span></span><br><span class="line"><span class="comment">//      参数二：回调函数</span></span><br><span class="line"><span class="comment">//          回调函数两个参数：</span></span><br><span class="line"><span class="comment">//                 参数一：错误信息</span></span><br><span class="line"><span class="comment">//                 参数二：得到文件的状态对象</span></span><br><span class="line"><span class="comment">//                      对象中有方法isFile,isDirectory</span></span><br><span class="line"><span class="comment">//                      对象中有属性：size,ctime</span></span><br><span class="line"><span class="comment">//                          如果当前状态为目录，则没有size属性</span></span><br><span class="line">fs.stat(<span class="string">"js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,stats</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(stats.isFile()) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"是文件"</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(stats.size);</span><br><span class="line">        <span class="built_in">console</span>.log(stats.ctime);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"是目录"</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(stats.size);</span><br><span class="line">        <span class="built_in">console</span>.log(stats.ctime);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+                <pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//引用核心模板</span>
+<span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//判断路径</span>
+<span class="token comment" spellcheck="true">//stat方法可以得到文件的状态</span>
+<span class="token comment" spellcheck="true">//  这个方法有两个参数：</span>
+<span class="token comment" spellcheck="true">//      参数一：要判断的路径</span>
+<span class="token comment" spellcheck="true">//      参数二：回调函数</span>
+<span class="token comment" spellcheck="true">//          回调函数两个参数：</span>
+<span class="token comment" spellcheck="true">//                 参数一：错误信息</span>
+<span class="token comment" spellcheck="true">//                 参数二：得到文件的状态对象</span>
+<span class="token comment" spellcheck="true">//                      对象中有方法isFile,isDirectory</span>
+<span class="token comment" spellcheck="true">//                      对象中有属性：size,ctime</span>
+<span class="token comment" spellcheck="true">//                          如果当前状态为目录，则没有size属性</span>
+fs<span class="token punctuation">.</span><span class="token function">stat</span><span class="token punctuation">(</span><span class="token string">"js"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span>stats<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span><span class="token function">isFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"是文件"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span>ctime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"是目录"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span>ctime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
             </div>
             <hr/>
 
@@ -496,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://robynnnn.gitee.io/2017/11/01/NodeJS/10.stat/">https://robynnnn.gitee.io/2017/11/01/NodeJS/10.stat/</a>
+                    <a href="https://robynnnn.gitee.io/2017/11/01/nodejs/10.stat/">https://robynnnn.gitee.io/2017/11/01/nodejs/10.stat/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -581,7 +585,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/09.后台语言模板的渲染/">
+                <a href="/2017/11/01/nodejs/09.hou-tai-yu-yan-mo-ban-de-xuan-ran/">
                     <div class="card-image">
                         
                         
@@ -640,19 +644,19 @@ https://aui.github.io/art-template/zh-cn/i
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/07.根据不同的请求响应不同的文件/">
+                <a href="/2017/11/01/nodejs/11.jie-jue-shu-zu-wei-kong-de-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="07.根据不同的请求响应不同的文件">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="11.解决数组为空的问题">
                         
-                        <span class="card-title">07.根据不同的请求响应不同的文件</span>
+                        <span class="card-title">11.解决数组为空的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            123456789101112131415161718192021222324252627282930313233//引入http核心模块var http = require("http");var fs = require("fs");/
+                            #####在for循环中，for执行的时间是瞬间的，而在node中，执行的机制是I/O非阻塞机制，也就是说，for里面的东西还没有完全执行完，后面的代码已经开始执行了。其中这个问题在浏览器端的点击事件上也极为显著，解决的办法就是for里面要
                         
                     </div>
                     <div class="publish-info">
@@ -874,6 +878,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
             
             
             

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="分类: NodeJS, Robyn">
     <meta name="description" content="you are the owner of your career">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -214,17 +203,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -368,19 +346,28 @@
                 </a>
                 
                 
+                <a href="/categories/HTML基础/" title="HTML基础: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">HTML基础
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/categories/NodeJS/" title="NodeJS: 30">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            style="background-color: #F5EEF8;">NodeJS
+                            style="background-color: #D5F5E3;">NodeJS
                         <span class="tag-length">30</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/HTML基础/" title="HTML基础: 1">
+                <a href="/categories/HTML基础/HTML基础/" title="HTML基础: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">HTML基础
+                            style="background-color: #E8F8F5;">HTML基础
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -389,16 +376,7 @@
                 <a href="/categories/NodeJS/NodeJS/" title="NodeJS: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            style="background-color: #E8F8F5;">NodeJS
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/HTML基础/HTML基础/" title="HTML基础: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #FEF9E7;">HTML基础
+                            style="background-color: #FEF9E7;">NodeJS
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -444,7 +422,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/20.let关键字/">
+                    <a href="/2017/11/01/nodejs/20.let-guan-jian-zi/">
                         <div class="card-image tag-image">
                             
                             
@@ -456,7 +434,14 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                12345678910111213141516171819202122232425262728293031323334//在ES6中，如果要声明变量除了可以用var关键字，还可以使用let关键字：// var a = 1234;// con
+                                //在ES6中，如果要声明变量除了可以用var关键字，还可以使用let关键字：
+// var a = 1234;
+// console.log(a);
+// let a = 123;
+// console.log(a);
+
+//区别：
+//
                             
                         </div>
                         <div class="publish-info">
@@ -490,7 +475,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/19.moment的使用/">
+                    <a href="/2017/11/01/nodejs/19.moment-de-shi-yong/">
                         <div class="card-image tag-image">
                             
                             
@@ -502,7 +487,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1234567891011121314/* * @Author: Robyn  * @Date: 2017-10-31 20:04:18  * @Last Modified by: Robyn * @Last Modified time: 
+                                /*
+ * @Author: Robyn 
+ * @Date: 2017-10-31 20:04:18 
+ * @Last Modified by: Robyn
+ * @Last Modified time: 2017-10-31 20:0
                             
                         </div>
                         <div class="publish-info">
@@ -536,7 +525,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/18.commonjs规范/">
+                    <a href="/2017/11/01/nodejs/18.commonjs-gui-fan/">
                         <div class="card-image tag-image">
                             
                             
@@ -548,7 +537,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                123456789101112131415161718192021222324252627282930313233343536373839404142434445//  模块的定义：//      commonjs规范定义模块：创建的每一个
+                                //  模块的定义：
+//      commonjs规范定义模块：创建的每一个js文件都是一个单独的块
+
+//  模块接口的暴露
+//      使用module.exports关键字来暴露
+//      也可以使用另一个关键字来暴露：
                             
                         </div>
                         <div class="publish-info">
@@ -582,7 +576,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/17.url.parse/">
+                    <a href="/2017/11/01/nodejs/17.url.parse/">
                         <div class="card-image tag-image">
                             
                             
@@ -594,7 +588,11 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                12345678910111213141516171819/* * @Author: Robyn  * @Date: 2017-10-31 19:54:05  * @Last Modified by: Robyn * @Last Modif
+                                /*
+ * @Author: Robyn 
+ * @Date: 2017-10-31 19:54:05 
+ * @Last Modified by: Robyn
+ * @Last Modified time: 2017-10-31 19:5
                             
                         </div>
                         <div class="publish-info">
@@ -628,7 +626,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/16.同步读写文件/">
+                    <a href="/2017/11/01/nodejs/16.tong-bu-du-xie-wen-jian/">
                         <div class="card-image tag-image">
                             
                             
@@ -640,7 +638,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                12345678910111213141516171819202122232425var fs = require("fs");console.log("a文件开始读取");var a = fs.readFileSync("./data/a
+                                var fs = require("fs");
+
+console.log("a文件开始读取");
+var a = fs.readFileSync("./data/a.txt");
+console.log("a文件读取完成");
+consol
                             
                         </div>
                         <div class="publish-info">
@@ -674,7 +677,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/15.异步读写文件/">
+                    <a href="/2017/11/01/nodejs/15.yi-bu-du-xie-wen-jian/">
                         <div class="card-image tag-image">
                             
                             
@@ -686,7 +689,13 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                12345678910111213141516171819202122232425262728293031var fs = require("fs");console.log("a文件开始读取");//读取a文件fs.readFile(".
+                                var fs = require("fs");
+
+console.log("a文件开始读取");
+//读取a文件
+fs.readFile("./data/a.txt",function(err,data){
+    if(err) {
+  
                             
                         </div>
                         <div class="publish-info">
@@ -720,7 +729,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/14.安全的模拟静态资源服务器/">
+                    <a href="/2017/11/01/nodejs/14.an-quan-de-mo-ni-jing-tai-zi-yuan-fu-wu-qi/">
                         <div class="card-image tag-image">
                             
                             
@@ -732,7 +741,14 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                1234567891011121314151617181920212223242526272829303132333435363738394041424344454647//引入http核心模块var http = require("htt
+                                //引入http核心模块
+var http = require("http");
+var fs = require("fs");
+
+//创建一个服务器对象
+var server = http.createServer();
+
+//开启服务器
                             
                         </div>
                         <div class="publish-info">
@@ -766,7 +782,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/13.模拟静态资源服务器/">
+                    <a href="/2017/11/01/nodejs/13.mo-ni-jing-tai-zi-yuan-fu-wu-qi/">
                         <div class="card-image tag-image">
                             
                             
@@ -778,7 +794,12 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646
+                                //引入http核心模块
+var http = require("http");
+var fs = require("fs");
+
+var template = require("art-template");
+var moment = r
                             
                         </div>
                         <div class="publish-info">
@@ -812,53 +833,7 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/NodeJS/11.解决数组为空的问题/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="11.解决数组为空的问题">
-                            
-                            <span class="card-title">11.解决数组为空的问题</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                #####在for循环中，for执行的时间是瞬间的，而在node中，执行的机制是I/O非阻塞机制，也就是说，for里面的东西还没有完全执行完，后面的代码已经开始执行了。其中这个问题在浏览器端的点击事件上也极为显著，解决的办法就是for里面要
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/NodeJS/12.moment/">
+                    <a href="/2017/11/01/nodejs/12.moment/">
                         <div class="card-image tag-image">
                             
                             
@@ -874,9 +849,57 @@
 http://momentjs.cn/
 
 使用moment.js进行时间的格式化
-1.首先先要下载相关moment的插件1npm install moment
+1.首先先要下载相关moment的插件
+npm install moment
 2.然后去上面的网站可以查看moment的用法
-3.demo演示12345va
+3.demo演示
+var mo
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/NodeJS/" class="post-category">
+                                    NodeJS
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/NodeJS/">
+                            <span class="chip bg-color">NodeJS</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2017/11/01/nodejs/11.jie-jue-shu-zu-wei-kong-de-wen-ti/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="11.解决数组为空的问题">
+                            
+                            <span class="card-title">11.解决数组为空的问题</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                #####在for循环中，for执行的时间是瞬间的，而在node中，执行的机制是I/O非阻塞机制，也就是说，for里面的东西还没有完全执行完，后面的代码已经开始执行了。其中这个问题在浏览器端的点击事件上也极为显著，解决的办法就是for里面要
                             
                         </div>
                         <div class="publish-info">
@@ -998,6 +1021,9 @@ http://momentjs.cn/
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
             
             
             

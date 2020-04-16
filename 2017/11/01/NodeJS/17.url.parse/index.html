@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="17.url.parse, Robyn">
     <meta name="description" content="you are the owner of your career">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -214,17 +203,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -471,7 +449,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Robyn </span></span><br><span class="line"><span class="comment"> * @Date: 2017-10-31 19:54:05 </span></span><br><span class="line"><span class="comment"> * @Last Modified by: Robyn</span></span><br><span class="line"><span class="comment"> * @Last Modified time: 2017-10-31 19:59:19</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//这个是核心模块的其中一个url功能</span></span><br><span class="line"><span class="keyword">var</span> url = <span class="built_in">require</span>(<span class="string">"url"</span>);</span><br><span class="line"><span class="comment">// console.log(url);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 可以打印url看看有哪些选项，当然也可以去官网查询其用法，这里需要讲解的是如何将地址栏的id获取</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"http://www.baidu.com:8080/a/b/c?id=2"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//true的意思是将它变成对象的形式，默认是false，是字符串的形式</span></span><br><span class="line"><span class="keyword">var</span> obj = url.parse(str,<span class="literal">true</span>);</span><br><span class="line"><span class="comment">// console.log(obj.query);</span></span><br><span class="line"><span class="comment">//下面的代码将能获取到2</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.query.id);</span><br></pre></td></tr></table></figure>
+                <pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/*
+ * @Author: Robyn 
+ * @Date: 2017-10-31 19:54:05 
+ * @Last Modified by: Robyn
+ * @Last Modified time: 2017-10-31 19:59:19
+ */</span>
+
+<span class="token comment" spellcheck="true">//这个是核心模块的其中一个url功能</span>
+<span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"url"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// console.log(url);</span>
+
+<span class="token comment" spellcheck="true">// 可以打印url看看有哪些选项，当然也可以去官网查询其用法，这里需要讲解的是如何将地址栏的id获取</span>
+<span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">"http://www.baidu.com:8080/a/b/c?id=2"</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//true的意思是将它变成对象的形式，默认是false，是字符串的形式</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// console.log(obj.query);</span>
+<span class="token comment" spellcheck="true">//下面的代码将能获取到2</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
             </div>
             <hr/>
 
@@ -496,7 +494,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://robynnnn.gitee.io/2017/11/01/NodeJS/17.url.parse/">https://robynnnn.gitee.io/2017/11/01/NodeJS/17.url.parse/</a>
+                    <a href="https://robynnnn.gitee.io/2017/11/01/nodejs/17.url.parse/">https://robynnnn.gitee.io/2017/11/01/nodejs/17.url.parse/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -581,7 +579,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/16.同步读写文件/">
+                <a href="/2017/11/01/nodejs/16.tong-bu-du-xie-wen-jian/">
                     <div class="card-image">
                         
                         
@@ -593,7 +591,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819202122232425var fs = require("fs");console.log("a文件开始读取");var a = fs.readFileSync("./data/a
+                            var fs = require("fs");
+
+console.log("a文件开始读取");
+var a = fs.readFileSync("./data/a.txt");
+console.log("a文件读取完成");
+consol
                         
                     </div>
                     <div class="publish-info">
@@ -630,7 +633,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/18.commonjs规范/">
+                <a href="/2017/11/01/nodejs/18.commonjs-gui-fan/">
                     <div class="card-image">
                         
                         
@@ -642,7 +645,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            123456789101112131415161718192021222324252627282930313233343536373839404142434445//  模块的定义：//      commonjs规范定义模块：创建的每一个
+                            //  模块的定义：
+//      commonjs规范定义模块：创建的每一个js文件都是一个单独的块
+
+//  模块接口的暴露
+//      使用module.exports关键字来暴露
+//      也可以使用另一个关键字来暴露：
                         
                     </div>
                     <div class="publish-info">
@@ -864,6 +872,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
             
             
             

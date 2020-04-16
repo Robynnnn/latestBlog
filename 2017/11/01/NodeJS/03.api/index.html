@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <meta name="keywords" content="03.api, Robyn">
     <meta name="description" content="you are the owner of your career">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -111,17 +111,6 @@
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -214,17 +203,6 @@
 			    <i class="fa-fw fas fa-comments"></i>
 			
 			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
 		</a>
           
         </li>
@@ -471,7 +449,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//接收一个两个数据相加的API</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getSum</span>(<span class="params">num1,num2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//将模块的接口暴露出去</span></span><br><span class="line"><span class="comment">//暴露的关键字是</span></span><br><span class="line"><span class="built_in">module</span>.exports.getSum = getSum;</span><br></pre></td></tr></table></figure>
+                <pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">//接收一个两个数据相加的API</span>
+<span class="token keyword">function</span> <span class="token function">getSum</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span>num2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//将模块的接口暴露出去</span>
+<span class="token comment" spellcheck="true">//暴露的关键字是</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span>getSum <span class="token operator">=</span> getSum<span class="token punctuation">;</span>
+</code></pre>
+
             </div>
             <hr/>
 
@@ -496,7 +482,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://robynnnn.gitee.io/2017/11/01/NodeJS/03.api/">https://robynnnn.gitee.io/2017/11/01/NodeJS/03.api/</a>
+                    <a href="https://robynnnn.gitee.io/2017/11/01/nodejs/03.api/">https://robynnnn.gitee.io/2017/11/01/nodejs/03.api/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -581,7 +567,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/02.模块化规则/">
+                <a href="/2017/11/01/nodejs/02.mo-kuai-hua-gui-ze/">
                     <div class="card-image">
                         
                         
@@ -593,7 +579,13 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516//CMD规范：//  定义模块：define//  暴露接口：不需要暴露//  引用模块：关键字：require//NodeJS规范：//  定义模块：不需要使用任何关键字，直接创建一个js文
+                            //CMD规范：
+//  定义模块：define
+//  暴露接口：不需要暴露
+//  引用模块：关键字：require
+//NodeJS规范：
+//  定义模块：不需要使用任何关键字，直接创建一个js文件，它就是一个单独的模块
+//  暴
                         
                     </div>
                     <div class="publish-info">
@@ -630,7 +622,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/11/01/NodeJS/04.核心模块之文件模块/">
+                <a href="/2017/11/01/nodejs/04.he-xin-mo-kuai-zhi-wen-jian-mo-kuai/">
                     <div class="card-image">
                         
                         
@@ -642,7 +634,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061//文件模块：
+                            //文件模块：用来帮助我们操作文件
+//由于核心模块属于一个单独的模块，所以我们在使用之前需要引用这个核心模块
+var fs = require("fs");//引用文件操作核心模块
+
+//在fs核心 模块中，有一个方法可以用来读取文件中的
                         
                     </div>
                     <div class="publish-info">
@@ -864,6 +860,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">26.9k</span>&nbsp;字
             
             
             
