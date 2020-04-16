@@ -104,17 +104,6 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -192,17 +181,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
 		</a>
           
         </li>
@@ -336,7 +314,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                Stay hungry,stay foolish
+                行到水穷处，坐看云起时。
                 
             </div>
 
@@ -485,22 +463,60 @@
             <div class="card">
                 <div class="card-content">
                     
-                        <div class="dream">
+
+                    
+                        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        font-size: 15px;
+        color: #42b983;
+    }
+
     
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;motto
-    </div>
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="music-player">
+    
+        <div class="title center-align">
+            <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+        </div>
     
     <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            Stay hungry,stay foolish
-        </div>
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='false'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
     </div>
 </div>
 
-                    
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
-                    
+                        
 
                     
 
@@ -526,827 +542,38 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/10/30/01.welcome/">
+                    <a href="/2018/11/05/javascript/dan-chuang-zhi-hou-jin-zhi-ye-mian-gun-dong/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Welcome to robyn&#39;s blog">
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="弹窗之后禁止页面滚动">
                             
-                            <span class="card-title">Welcome to robyn&#39;s blog</span>
+                            <span class="card-title">弹窗之后禁止页面滚动</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                主页标签归档简书                                GitHub
+                                let bodyEl = document.body
+let top = 0
+function stopBodyScroll (isFixed) {
+  if (isFixed) {
+    top = window.scrollY
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-10-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Robyn
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/博客/">
-                            <span class="chip bg-color">博客</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/01.nodejs-introduce/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="01.NodeJS-introduce">
-                            
-                            <span class="card-title">01.NodeJS-introduce</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                NodeJS笔记什么是  Node
-Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven,
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                <a href="/categories/NodeJS/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/02.mo-kuai-hua-gui-ze/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="02.模块化规则">
-                            
-                            <span class="card-title">02.模块化规则</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //CMD规范：
-//  定义模块：define
-//  暴露接口：不需要暴露
-//  引用模块：关键字：require
-//NodeJS规范：
-//  定义模块：不需要使用任何关键字，直接创建一个js文件，它就是一个单独的模块
-//  暴
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/03.api/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="03.api">
-                            
-                            <span class="card-title">03.api</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //接收一个两个数据相加的API
-function getSum(num1,num2) {
-    return num1 + num2;
-}
-//将模块的接口暴露出去
-//暴露的关键字是
-module.exports.getSum = g
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/04.he-xin-mo-kuai-zhi-wen-jian-mo-kuai/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="04.核心模块之文件模块">
-                            
-                            <span class="card-title">04.核心模块之文件模块</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //文件模块：用来帮助我们操作文件
-//由于核心模块属于一个单独的模块，所以我们在使用之前需要引用这个核心模块
-var fs = require("fs");//引用文件操作核心模块
-
-//在fs核心 模块中，有一个方法可以用来读取文件中的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/05.helloworld-node-ban-ben/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="05.helloworld-node版本">
-                            
-                            <span class="card-title">05.helloworld-node版本</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //使用nodejs开启服务器
-//在nodejs中如果要开启服务器，需要使用到一个核心模块：http模块
-
-//1.0引用http核心模块
-var http = require("http");
-
-//2.0开启服务器
-//2.1创建服务
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/06.gen-ju-bu-tong-qing-qiu-xiang-ying-bu-tong-de-nei-rong/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="06.根据不同请求响应不同的内容">
-                            
-                            <span class="card-title">06.根据不同请求响应不同的内容</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引入http核心模块
-var http = require("http");
-
-//创建一个服务器对象
-var server = http.createServer();
-
-//开启服务器
-server.on("request",fun
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/07.gen-ju-bu-tong-de-qing-qiu-xiang-ying-bu-tong-de-wen-jian/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="07.根据不同的请求响应不同的文件">
-                            
-                            <span class="card-title">07.根据不同的请求响应不同的文件</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引入http核心模块
-var http = require("http");
-var fs = require("fs");
-
-//创建一个服务器对象
-var server = http.createServer();
-
-//开启服务器
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/08.wan-cheng-yi-ge-xiao-xing-jing-tai-zi-yuan-fu-wu-qi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="08.完成一个小型静态资源服务器">
-                            
-                            <span class="card-title">08.完成一个小型静态资源服务器</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引入http核心模块
-var http = require("http");
-var fs = require("fs");
-
-//创建一个服务器对象
-var server = http.createServer();
-
-//开启服务器
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/09.hou-tai-yu-yan-mo-ban-de-xuan-ran/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="09.后台语言模板的渲染">
-                            
-                            <span class="card-title">09.后台语言模板的渲染</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                #####1. 首先先去官网查找模板的相关使用
-
-https://www.npmjs.com/
-
-在这个网站上输入关键字art-template
-
-
-
-
-
-https://aui.github.io/art-template/zh-cn/i
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/10.stat/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="10.stat">
-                            
-                            <span class="card-title">10.stat</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引用核心模板
-var fs = require("fs");
-
-//判断路径
-//stat方法可以得到文件的状态
-//  这个方法有两个参数：
-//      参数一：要判断的路径
-//      参数二：回调函数
-//        
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/11.jie-jue-shu-zu-wei-kong-de-wen-ti/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="11.解决数组为空的问题">
-                            
-                            <span class="card-title">11.解决数组为空的问题</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                #####在for循环中，for执行的时间是瞬间的，而在node中，执行的机制是I/O非阻塞机制，也就是说，for里面的东西还没有完全执行完，后面的代码已经开始执行了。其中这个问题在浏览器端的点击事件上也极为显著，解决的办法就是for里面要
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/12.moment/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="12.moment">
-                            
-                            <span class="card-title">12.moment</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-http://momentjs.cn/
-
-使用moment.js进行时间的格式化
-1.首先先要下载相关moment的插件
-npm install moment
-2.然后去上面的网站可以查看moment的用法
-3.demo演示
-var mo
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/13.mo-ni-jing-tai-zi-yuan-fu-wu-qi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="13.模拟静态资源服务器">
-                            
-                            <span class="card-title">13.模拟静态资源服务器</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引入http核心模块
-var http = require("http");
-var fs = require("fs");
-
-var template = require("art-template");
-var moment = r
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/14.an-quan-de-mo-ni-jing-tai-zi-yuan-fu-wu-qi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="14.安全的模拟静态资源服务器">
-                            
-                            <span class="card-title">14.安全的模拟静态资源服务器</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                //引入http核心模块
-var http = require("http");
-var fs = require("fs");
-
-//创建一个服务器对象
-var server = http.createServer();
-
-//开启服务器
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2017/11/01/nodejs/15.yi-bu-du-xie-wen-jian/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="15.异步读写文件">
-                            
-                            <span class="card-title">15.异步读写文件</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                var fs = require("fs");
-
-console.log("a文件开始读取");
-//读取a文件
-fs.readFile("./data/a.txt",function(err,data){
-    if(err) {
   
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-11-05
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
+                                <a href="/categories/javascript/" class="post-category">
+                                    javascript
                                 </a>
                                 
                                 
@@ -1357,8 +584,8 @@ fs.readFile("./data/a.txt",function(err,data){
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
+                        <a href="/tags/javascript/">
+                            <span class="chip bg-color">javascript</span>
                         </a>
                         
                     </div>
@@ -1368,37 +595,42 @@ fs.readFile("./data/a.txt",function(err,data){
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/nodejs/16.tong-bu-du-xie-wen-jian/">
+                    <a href="/2019/05/14/css/wen-zi-yi-chu-nei-rong-tong-guo-san-ge-xiao-dian-yin-cang/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="16.同步读写文件">
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="文字溢出内容通过三个小点隐藏">
                             
-                            <span class="card-title">16.同步读写文件</span>
+                            <span class="card-title">文字溢出内容通过三个小点隐藏</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                var fs = require("fs");
+                                //单行文本溢出解决方案：
+p {
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow: hidden;
+width: 210px;
+//一定要给宽度
+}
 
-console.log("a文件开始读取");
-var a = fs.readFileSync("./data/a.txt");
-console.log("a文件读取完成");
-consol
+
+//多行文本解决方案（只有
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-05-14
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
+                                <a href="/categories/css/" class="post-category">
+                                    css
                                 </a>
                                 
                                 
@@ -1409,8 +641,8 @@ consol
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
+                        <a href="/tags/css/">
+                            <span class="chip bg-color">css</span>
                         </a>
                         
                     </div>
@@ -1420,36 +652,41 @@ consol
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2017/11/01/nodejs/17.url.parse/">
+                    <a href="/2020/04/16/system/u-pan-kao-bei-win10-xi-tong-jiao-cheng/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="17.url.parse">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="U盘拷贝win10系统教程">
                             
-                            <span class="card-title">17.url.parse</span>
+                            <span class="card-title">U盘拷贝win10系统教程</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                /*
- * @Author: Robyn 
- * @Date: 2017-10-31 19:54:05 
- * @Last Modified by: Robyn
- * @Last Modified time: 2017-10-31 19:5
+                                1. 首先下载UltraISO
+2. 插入大于4GB的空U盘（U盘如果有重要资料，提前转移！！）3. 运行软件
+4. 打开win10.ISO（文件–打开）
+
+5. 写入硬盘映像
+
+
+
+
+
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/NodeJS/" class="post-category">
-                                    NodeJS
+                                <a href="/categories/system/" class="post-category">
+                                    system
                                 </a>
                                 
                                 
@@ -1460,8 +697,59 @@ consol
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/NodeJS/">
-                            <span class="chip bg-color">NodeJS</span>
+                        <a href="/tags/system/">
+                            <span class="chip bg-color">system</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/04/16/vue/vue-manager/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="vue搭建的后台管理案例">
+                            
+                            <span class="card-title">vue搭建的后台管理案例</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+一个小demo
+
+vue-manager
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/vue/" class="post-category">
+                                    vue
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/vue/">
+                            <span class="chip bg-color">vue</span>
                         </a>
                         
                     </div>
@@ -1475,81 +763,9 @@ consol
 </main>
 
 
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 3</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="tencent"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
@@ -1561,7 +777,7 @@ consol
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.9k</span>&nbsp;字
+                class="white-color">303</span>&nbsp;字
             
             
             
