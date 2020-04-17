@@ -449,29 +449,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class=" language-css"><code class="language-css"><span class="token selector">//单行文本溢出解决方案：
-p </span><span class="token punctuation">{</span>
+                <pre class=" language-less"><code class="language-less"><span class="token comment" spellcheck="true">//单行文本溢出解决方案：</span>
+<span class="token selector">p</span> <span class="token punctuation">{</span>
 <span class="token property">white-space</span><span class="token punctuation">:</span>nowrap<span class="token punctuation">;</span>
 <span class="token property">text-overflow</span><span class="token punctuation">:</span>ellipsis<span class="token punctuation">;</span>
 <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
 <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">210</span>px<span class="token punctuation">;</span>
-//一定要给宽度
+<span class="token comment" spellcheck="true">//一定要给宽度</span>
 <span class="token punctuation">}</span>
 
 
-<span class="token selector">//多行文本解决方案（只有谷歌生效）
-<span class="token class">.mui-ellipsis-3</span> </span><span class="token punctuation">{</span>
-<span class="token property">display</span><span class="token punctuation">:</span> -webkit-box<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//多行文本解决方案（只有谷歌生效）</span>
+<span class="token selector">.mui-ellipsis-3</span> <span class="token punctuation">{</span>
+<span class="token property">display</span><span class="token punctuation">:</span> <span class="token operator">-</span>webkit<span class="token operator">-</span>box<span class="token punctuation">;</span>
 <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
 <span class="token property">white-space</span><span class="token punctuation">:</span> normal!important<span class="token punctuation">;</span>
 <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
-<span class="token property">word-wrap</span><span class="token punctuation">:</span> break-word<span class="token punctuation">;</span>
+<span class="token property">word-wrap</span><span class="token punctuation">:</span> break<span class="token operator">-</span>word<span class="token punctuation">;</span>
 <span class="token property">-webkit-line-clamp</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
 <span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">// 多行文本溢出隐藏方案（兼容）：
-<span class="token class">.block-with-text</span> </span><span class="token punctuation">{</span>
+<span class="token comment" spellcheck="true">// 多行文本溢出隐藏方案（兼容）：</span>
+<span class="token selector">.block-with-text</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">/* hide text if it more than N lines  */</span>
   <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">/* for set '...' in absolute position */</span>
@@ -483,10 +483,10 @@ p </span><span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">/* fix problem when last visible word doesn't adjoin right side  */</span>
   <span class="token property">text-align</span><span class="token punctuation">:</span> justify<span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">/* */</span>
-  <span class="token property">margin-right</span><span class="token punctuation">:</span> -<span class="token number">1</span>em<span class="token punctuation">;</span>
+  <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">1</span>em<span class="token punctuation">;</span>
   <span class="token property">padding-right</span><span class="token punctuation">:</span> <span class="token number">1</span>em<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.block-with-text</span><span class="token pseudo-element">:before</span> </span><span class="token punctuation">{</span>
+<span class="token selector">.block-with-text:before</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">/* points in the end */</span>
   <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"..."</span><span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">/* absolute position */</span>
@@ -495,7 +495,7 @@ p </span><span class="token punctuation">{</span>
   <span class="token property">right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
   <span class="token property">bottom</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.block-with-text</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span>
+<span class="token selector">.block-with-text:after</span> <span class="token punctuation">{</span>
   <span class="token comment" spellcheck="true">/* points in the end */</span>
   <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">/* absolute position */</span>
@@ -643,27 +643,22 @@ p </span><span class="token punctuation">{</span>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/16/system/u-pan-kao-bei-win10-xi-tong-jiao-cheng/">
+                <a href="/2020/04/16/vue/vue-manager/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="U盘拷贝win10系统教程">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="vue搭建的后台管理案例">
                         
-                        <span class="card-title">U盘拷贝win10系统教程</span>
+                        <span class="card-title">vue搭建的后台管理案例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. 首先下载UltraISO
-2. 插入大于4GB的空U盘（U盘如果有重要资料，提前转移！！）3. 运行软件
-4. 打开win10.ISO（文件–打开）
+                            
+一个小demo
 
-5. 写入硬盘映像
-
-
-
-
+vue-manager
 
                         
                     </div>
@@ -675,8 +670,8 @@ p </span><span class="token punctuation">{</span>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/system/" class="post-category">
-                                    system
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
                                 </a>
                             
                             
@@ -686,8 +681,8 @@ p </span><span class="token punctuation">{</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/system/">
-                        <span class="chip bg-color">system</span>
+                    <a href="/tags/vue/">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
