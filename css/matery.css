@@ -4,6 +4,7 @@
     .container {
         width: 95%;
     }
+
 }
 
 /*中等屏幕下(平板类)的样式*/
@@ -2133,4 +2134,15 @@ footer .copy-right {
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+/*全局基础样式*/
+/*小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 601px) {
+  .bg-cover .title {
+    font-size: 20px;
+  }
+  .bg-cover .description {
+    font-size: 14px;
+    white-space: nowrap;
+  }
 }

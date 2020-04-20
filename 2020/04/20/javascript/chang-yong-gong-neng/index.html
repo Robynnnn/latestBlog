@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="相册, Robyn">
+    <meta name="keywords" content="常用功能, Robyn">
     <meta name="description" content="you are the owner of your career">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>相册 | Robyn</title>
+    <title>常用功能 | Robyn</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -286,12 +286,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">相册</h1>
+                    <h1 class="description center-align post-title">常用功能</h1>
                 </div>
             </div>
         </div>
@@ -406,12 +406,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/javascript/" class="post-category">
+                                javascript
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -420,7 +433,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-16
+                    2020-04-20
                 </div>
                 
 
@@ -436,9 +449,83 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><div class="instagram" data-client-id="a0d4bd    ab154b4c689aff70602cb34a2c" data-user-id="438522285"><br>    <a href="http://instagram.com/litten225" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a><br></div></p>
-<script src="/js/jquery.lazyload.js"></script>
-<script src="/js/instagram.js"></script>
+                <blockquote>
+<p>本文是在工作中收集到实用并且常用的功能，仅供学习参考使用</p>
+</blockquote>
+<h5 id="1-数组去重"><a href="#1-数组去重" class="headerlink" title="1. 数组去重"></a>1. 数组去重</h5><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/***
+*@desc: 数组去重
+*/</span>
+<span class="token keyword">const</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">' '</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">,</span><span class="token string">' '</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+​
+<span class="token comment" spellcheck="true">// 1: "Set"</span>
+<span class="token punctuation">[</span><span class="token operator">...</span><span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+​
+<span class="token comment" spellcheck="true">// 2: "Filter"</span>
+array<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> array<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">===</span> index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+​
+<span class="token comment" spellcheck="true">// 3: "Reduce"</span>
+array<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>unique<span class="token punctuation">,</span> item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> 
+  unique<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">?</span> unique <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>unique<span class="token punctuation">,</span> item<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+​
+​
+<span class="token comment" spellcheck="true">// RESULT:</span>
+<span class="token comment" spellcheck="true">// [' ', 1, 2, 3];</span>
+</code></pre>
+<h5 id="2-axios封装"><a href="#2-axios封装" class="headerlink" title="2. axios封装"></a>2. axios封装</h5><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Message <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span>
+<span class="token comment" spellcheck="true">// 创建axios实例</span>
+<span class="token keyword">const</span> service <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  baseURL<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>BASE_API<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// api 的 base_url</span>
+  timeout<span class="token punctuation">:</span> <span class="token number">5000</span> <span class="token comment" spellcheck="true">// 请求超时时间</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// request拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  config <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 根据具体实际情况，判断是否有 token ，如若没有 token，就去获取 token</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'X-Token'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">getToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 让每个请求携带自定义token 请根据实际情况自行修改</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> config
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Do something with request error</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// for debug</span>
+    Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">// response 拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  response <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/**
+     * code为非0是抛错 可结合自己业务进行修改
+     */</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> response<span class="token punctuation">.</span>data
+    <span class="token comment" spellcheck="true">// 至于其他状态码需要处理的，可以以此类推进行处理，本文不过多讲解</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>code <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// Message</span>
+      <span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>message<span class="token punctuation">,</span>
+        type<span class="token punctuation">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+        duration<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token operator">*</span> <span class="token number">1000</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> response<span class="token punctuation">.</span>data
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'err'</span> <span class="token operator">+</span> error<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// for debug</span>
+    <span class="token function">Message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      message<span class="token punctuation">:</span> error<span class="token punctuation">.</span>message<span class="token punctuation">,</span>
+      type<span class="token punctuation">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+      duration<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token operator">*</span> <span class="token number">1000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -464,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://robynnnn.gitee.io/instagram/index.html">https://robynnnn.gitee.io/instagram/index.html</a>
+                    <a href="https://robynnnn.gitee.io/2020/04/20/javascript/chang-yong-gong-neng/">https://robynnnn.gitee.io/2020/04/20/javascript/chang-yong-gong-neng/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -501,7 +588,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -541,7 +632,7 @@
         repo: 'blogComment',
         owner: 'Robynnnn',
         admin: "Robynnnn",
-        id: '2020-04-16T10-51-41',
+        id: '2020-04-20T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -570,37 +661,55 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/instagram/index.html">
+                <a href="/2020/04/20/javascript/chang-yong-gong-neng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="相册">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="常用功能">
                         
-                        <span class="card-title">相册</span>
+                        <span class="card-title">常用功能</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                                图片来自instagram，正在加载中…
+                            
+本文是在工作中收集到实用并且常用的功能，仅供学习参考使用
 
-
-
+1. 数组去重/***
+*@desc: 数组去重
+*/
+const array = [' ', 1,  2, ' ',' ', 3];
+​
+// 1: "Set"
+[...new
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Robyn
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/javascript/" class="post-category">
+                                    javascript
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -608,40 +717,55 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/instagram/index.html">
+                <a href="/2020/04/17/css/css-shu-biao-xuan-fu-zhi-hou-zheng-ge-kuang-fu-qi-lai-de-xiao-guo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="相册">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CSS鼠标悬浮之后整个框浮起来的效果">
                         
-                        <span class="card-title">相册</span>
+                        <span class="card-title">CSS鼠标悬浮之后整个框浮起来的效果</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                                图片来自instagram，正在加载中…
+                            .productsShow>li {
+    -webkit-transition: .6s;
+    transition: .6s;
+}
 
+.productsShow>li:hover {
 
-
+ -webkit-transform: tr
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-17
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Robyn
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CSS/" class="post-category">
+                                    CSS
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
